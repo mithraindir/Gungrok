@@ -7,7 +7,6 @@ public class shieldController : MonoBehaviour
 
     float MoveX = 0;
     float MoveZ = 0;
-    Vector3 veloSave;
     Vector3 vect;
 
     // Start is called before the first frame update
