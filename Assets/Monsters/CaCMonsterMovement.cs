@@ -10,8 +10,8 @@ public class CaCMonsterMovement : MonoBehaviour
     GameObject knight;
     GameObject archer;
 
-    public Vector3 Vector3Knight;
-    public Vector3 VectorMonster;
+    Vector3 Vector3Knight;
+    Vector3 VectorMonster;
     private Rigidbody monster;
 
     private float Abs (float x)

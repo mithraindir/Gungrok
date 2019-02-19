@@ -60,9 +60,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FollowCamera.cs" />
-    <Compile Include="Assets\PlayerMovement.cs" />
-    <Compile Include="Assets\shieldController.cs" />
+    <Compile Include="Assets\Camera\FollowCamera.cs" />
+    <Compile Include="Assets\Monsters\CaCKnockBack.cs" />
+    <Compile Include="Assets\Monsters\CaCMonsterMovement.cs" />
+    <Compile Include="Assets\Players\PlayerMovement.cs" />
+    <Compile Include="Assets\Players\shield\shieldController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Asus/Desktop/Gungrok/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
