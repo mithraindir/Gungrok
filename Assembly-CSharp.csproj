@@ -64,6 +64,7 @@
     <Compile Include="Assets\Monsters\CaCKnockBack.cs" />
     <Compile Include="Assets\Monsters\CaCMonsterMovement.cs" />
     <Compile Include="Assets\Players\PlayerMovement.cs" />
+    <Compile Include="Assets\Players\shield\shieldController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/Gungrok/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
