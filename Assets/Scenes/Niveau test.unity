@@ -459,7 +459,7 @@ MonoBehaviour:
   MovementSpeed: 3
   ProjectileSpeed: 0
   DureeMovement: 50
-  DureeEntreActions: 5000
+  DureeEntreActions: 100
 --- !u!1 &925340193
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,9 +645,9 @@ GameObject:
   - component: {fileID: 1353589669}
   - component: {fileID: 1353589668}
   - component: {fileID: 1353589667}
-  - component: {fileID: 1353589666}
   - component: {fileID: 1353589671}
   - component: {fileID: 1353589672}
+  - component: {fileID: 1353589666}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -664,21 +664,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1353589665}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3d5eb7c028495742b2c152b85c9553b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Script: {fileID: 11500000, guid: b988794f7a3c95e49ba401ccbdedce70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  knight: {fileID: 0}
-  archer: {fileID: 0}
-  Vector3Knight: {x: 0, y: 0, z: 0}
-  VectorMonster: {x: 0, y: 0, z: 0}
-  monster: {fileID: 0}
 --- !u!136 &1353589667
 CapsuleCollider:
   m_ObjectHideFlags: 0

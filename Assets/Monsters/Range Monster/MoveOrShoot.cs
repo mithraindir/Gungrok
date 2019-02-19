@@ -20,6 +20,8 @@ public class MoveOrShoot : MonoBehaviour
     bool IsBouging;
     float CbBouging;
 
+    //==========================================================================================================================
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,25 @@ public class MoveOrShoot : MonoBehaviour
         compteur = 0;
         CbBouging = 0;
     }
+
+    //===========================================================================================================================
+
+    //Movement sera appelé à chaque frame du mouvement
+    void Movement()
+    {
+
+        Debug.Log("Je Bouuuge");
+    }
+
+    //===========================================================================================================================
+
+    //Shoot sera appelé à chaque fois qu'un projectile est tiré
+    void Shoot()
+    {
+        Debug.Log("Je tiiiire");
+    }
+
+    //===========================================================================================================================
 
     // Update is called once per frame
     void FixedUpdate()
@@ -49,7 +70,9 @@ public class MoveOrShoot : MonoBehaviour
                 {
                     //Sinon on bouge
                     CbBouging += 1;
-                    Debug.Log("Je Bouuuge");
+
+                    //On appelle le mouvement
+                    Movement();
                 }
             }
             else
@@ -66,7 +89,7 @@ public class MoveOrShoot : MonoBehaviour
                 else
                 {
                     //... que de tirer
-                    Debug.Log("Je tiiiire");
+                    Shoot();
                 }
             }
         }
