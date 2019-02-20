@@ -20,7 +20,7 @@ public class MoveOrShoot : MonoBehaviour
     bool IsBouging;
     float CbBouging;
 
-    //==========================================================================================================================
+    //================================================
 
     // Start is called before the first frame update
     void Start()
@@ -31,16 +31,45 @@ public class MoveOrShoot : MonoBehaviour
         CbBouging = 0;
     }
 
-    //===========================================================================================================================
+    //=================================================
 
-    //Movement sera appelé à chaque frame du mouvement
-    void Movement()
+    //juste une valeur absolue, parcque c'est chouette
+    float abs(float x)
     {
-
-        Debug.Log("Je Bouuuge");
+        if (x < 0)
+            return -x;
+        return x;
     }
 
-    //===========================================================================================================================
+    //=================================================
+
+        //Movement sera appelé au debut du mouvement pour actualiser la direction
+    void Movement()
+    {
+        //On prend la localisation du player et du monstre
+        Vector3 knight = GameObject.FindGameObjectWithTag("KnightPlayer").transform.position;
+        Vector3 monster = body.transform.position;
+        int random = Random.Range(0, 10);
+
+        //on prend l'axe la plus éloignée
+        if ( abs(monster.z) - abs(knight.z) < abs(monster.x) - abs(knight.x))
+        {
+            if (random >= 6) // 1/2 d'aller dans le sens opposé
+                mouvement = new Vector3(0, 0, -MovementSpeed);
+            else
+                mouvement = new Vector3(0, 0, MovementSpeed);
+        }
+        else
+        {
+            if (random >= 6)
+                mouvement = new Vector3(-MovementSpeed, 0, 0);
+            else
+                mouvement = new Vector3(MovementSpeed, 0, 0);
+        }
+
+    }
+
+    //=================================================
 
     //Shoot sera appelé à chaque fois qu'un projectile est tiré
     void Shoot()
@@ -48,7 +77,7 @@ public class MoveOrShoot : MonoBehaviour
         Debug.Log("Je tiiiire");
     }
 
-    //===========================================================================================================================
+    //=================================================
 
     // Update is called once per frame
     void FixedUpdate()
@@ -68,11 +97,11 @@ public class MoveOrShoot : MonoBehaviour
                 }
                 else
                 {
-                    //Sinon on bouge
+                    //Sinon on incrémente le bouging
                     CbBouging += 1;
 
-                    //On appelle le mouvement
-                    Movement();
+                    //On bouge
+                    body.AddForce(mouvement);
                 }
             }
             else
@@ -85,6 +114,9 @@ public class MoveOrShoot : MonoBehaviour
                 {
                     //moins de chance de bouger...
                     IsBouging = true;
+
+                    //on actualise la direction
+                    Movement();
                 }
                 else
                 {

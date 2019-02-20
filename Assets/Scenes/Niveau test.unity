@@ -144,8 +144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 274996572}
-  offset: {x: 0, y: 10, z: -10}
-  angle: 35
+  offset: {x: 0, y: 30, z: -10}
+  angle: 55
 --- !u!81 &36366204
 AudioListener:
   m_ObjectHideFlags: 0
@@ -369,7 +369,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &307814033
 CapsuleCollider:
@@ -456,9 +456,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdeaa4abe7160ad4db5ec91e247c9c94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 3
+  MovementSpeed: 2
   ProjectileSpeed: 0
-  DureeMovement: 50
+  DureeMovement: 25
   DureeEntreActions: 100
 --- !u!1 &925340193
 GameObject:
