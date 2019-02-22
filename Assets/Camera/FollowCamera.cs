@@ -19,6 +19,6 @@ public class FollowCamera : MonoBehaviour
 
         transform.position = player.transform.position + offset;
         //remove comment /down/ to test rotation changes in real time 
-       transform.SetPositionAndRotation(player.transform.position + offset, Quaternion.Euler(angle,0,0));
+       //transform.SetPositionAndRotation(player.transform.position + offset, Quaternion.Euler(angle,0,0));
     }
 }
