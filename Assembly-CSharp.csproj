@@ -64,6 +64,8 @@
     <Compile Include="Assets\Monsters\Cac Monster\CaCKnockBack.cs" />
     <Compile Include="Assets\Monsters\Cac Monster\CaCMonsterMovement.cs" />
     <Compile Include="Assets\Monsters\Range Monster\MoveOrShoot.cs" />
+    <Compile Include="Assets\Monsters\Range Monster\Projectiles\DestructionOnContact.cs" />
+    <Compile Include="Assets\Monsters\Range Monster\Projectiles\ProjectileMovement.cs" />
     <Compile Include="Assets\Players\Knight player\shield\shieldController.cs" />
     <Compile Include="Assets\Players\PlayerMovement.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
