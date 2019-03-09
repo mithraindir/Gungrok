@@ -5,12 +5,14 @@ using UnityEngine;
 public class MoveOrShoot : MonoBehaviour
 {
     public float MovementSpeed;
-    public float ProjectileSpeed;
     public float DureeMovement;
     public float DureeEntreActions;
+    public float ProjectileSpeed;
 
     Rigidbody body;
     Vector3 mouvement;
+    Rigidbody ProjectilePere;
+    Vector3 ProjectileDirection;
     
 
     //Le compteur permettra de n'effectuer les mouvements qu'au bout d'un laps de temps
@@ -29,6 +31,9 @@ public class MoveOrShoot : MonoBehaviour
         IsBouging = false;
         compteur = 0;
         CbBouging = 0;
+
+        // On récupère le projectile (pour l'envoyer par la suite)
+        ProjectilePere = GameObject.FindGameObjectWithTag("WizardProjectile").GetComponent<Rigidbody>();
     }
 
     //=================================================
@@ -75,6 +80,39 @@ public class MoveOrShoot : MonoBehaviour
     void Shoot()
     {
         Debug.Log("Je tiiiire");
+
+        //On crée un clone de l'objet projectile pour l'envoyer
+        Rigidbody ProjectileFils;
+
+        // on choisit la rotation pour l'envoyer dans la bonne direction:
+        // on trouve le joueur le plus proche, c'est vers lui
+        //On prend la localisation du player et du monstre
+        Vector3 knight = GameObject.FindGameObjectWithTag("KnightPlayer").transform.position;
+        Vector3 monster = body.transform.position;
+
+        //on prend l'axe la plus proche
+        if (abs(abs(monster.z) - abs(knight.z)) > abs(abs(monster.x) - abs(knight.x)))
+        {
+            //on prend le coté le plus proche
+            if (monster.z < knight.z)
+                ProjectileDirection = new Vector3(0, 0, 1);
+            else
+                ProjectileDirection = new Vector3(0, 0, -1);
+        }
+        else
+        {
+            //idem
+            if (monster.x < knight.x)
+                ProjectileDirection = new Vector3(1, 0, 0);
+            else
+                ProjectileDirection = new Vector3(-1, 0, 0);
+        }
+
+        // on copie colle le projectile avec la bonne direction
+        ProjectileFils = Instantiate(ProjectilePere, transform.position, Quaternion.LookRotation(ProjectileDirection));
+        ProjectileFils.GetComponent<ProjectileMovement>().ProjectileSpeed = ProjectileSpeed;
+
+        // theoriquement le projectile bougera de lui meme
     }
 
     //=================================================
@@ -100,14 +138,18 @@ public class MoveOrShoot : MonoBehaviour
                     //Sinon on incrémente le bouging
                     CbBouging += 1;
 
+                    
                     //On bouge
                     body.AddForce(mouvement);
+                    Debug.Log("Je bouuuge");
                 }
             }
             else
             {
                 //On reset la durée entre actions
                 compteur = 0;
+
+                
 
                 //prend un entier random entre 0 et 9 inclus
                 if (Random.Range(0,10) >= 7)
