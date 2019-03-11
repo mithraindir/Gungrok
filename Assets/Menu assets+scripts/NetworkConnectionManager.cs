@@ -83,7 +83,7 @@ public class NetworkConnectionManager : MonoBehaviourPunCallbacks
         base.OnJoinRandomFailed(returnCode, message);
         //no room available
         //create a room
-        PhotonNetwork.CreateRoom("Room 1", new RoomOptions { MaxPlayers = 3 });
+        PhotonNetwork.CreateRoom("Room 1", new RoomOptions { MaxPlayers = 2 });
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)
