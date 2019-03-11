@@ -17,6 +17,7 @@ public class NetworkConnectionManager : MonoBehaviourPunCallbacks
     // Use this for initialization
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
         TriesToConnectToMaster = false;
         TriesToConnectToRoom = false;
     }
@@ -24,14 +25,15 @@ public class NetworkConnectionManager : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        BtnConnectMaster.gameObject.SetActive(!PhotonNetwork.IsConnected && !TriesToConnectToMaster);
-        BtnConnectRoom.gameObject.SetActive(PhotonNetwork.IsConnected && !TriesToConnectToMaster && !TriesToConnectToRoom);
+        if (BtnConnectMaster != null)
+            BtnConnectMaster.gameObject.SetActive(!PhotonNetwork.IsConnected && !TriesToConnectToMaster);
+        if (BtnConnectRoom != null)
+            BtnConnectRoom.gameObject.SetActive(PhotonNetwork.IsConnected && !TriesToConnectToMaster && !TriesToConnectToRoom);
     }
 
     public void OnClickConnectToMaster()
     {
         //PhotonNetwork.NickName = "PlayerName";       //to set a player name
-        PhotonNetwork.AutomaticallySyncScene = true; //to call PhotonNetwork.LoadLevel()
 
         TriesToConnectToMaster = true;
         PhotonNetwork.ConnectUsingSettings();
@@ -66,9 +68,12 @@ public class NetworkConnectionManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        Debug.Log("Master: " + PhotonNetwork.IsMasterClient + " | Players In Room: " + PhotonNetwork.CurrentRoom.PlayerCount + " | RoomName: " + PhotonNetwork.CurrentRoom.Name);
         base.OnJoinedRoom();
         TriesToConnectToRoom = false;
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
+            PhotonNetwork.NickName = "Player 1";
+        else
+            PhotonNetwork.NickName = "Player 2";
         Debug.Log("Master: " + PhotonNetwork.IsMasterClient + " | Players In Room: " + PhotonNetwork.CurrentRoom.PlayerCount + " | RoomName: " + PhotonNetwork.CurrentRoom.Name);
         SceneManager.LoadScene("Niveau test");
     }
@@ -77,8 +82,8 @@ public class NetworkConnectionManager : MonoBehaviourPunCallbacks
     {
         base.OnJoinRandomFailed(returnCode, message);
         //no room available
-        //create a room (null as a name means "does not matter")
-        PhotonNetwork.CreateRoom("Room 1", new RoomOptions { MaxPlayers = 2 });
+        //create a room
+        PhotonNetwork.CreateRoom("Room 1", new RoomOptions { MaxPlayers = 3 });
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)

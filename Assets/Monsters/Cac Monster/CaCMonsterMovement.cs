@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CaCMonsterMovement : MonoBehaviour
+public class CaCMonsterMovement : MonoBehaviourPun
 {
     //movement speed
     public float speed;
@@ -12,6 +13,7 @@ public class CaCMonsterMovement : MonoBehaviour
 
     Vector3 Vector3Knight;
     Vector3 VectorMonster;
+    Rigidbody PrefabZombie;
     private Rigidbody monster;
 
     private float Abs (float x)
@@ -28,7 +30,7 @@ public class CaCMonsterMovement : MonoBehaviour
         monster = GetComponent<Rigidbody>();
 
         //get players (for coordinates)
-        knight = GameObject.FindGameObjectWithTag("KnightPlayer");
+        knight = GameObject.FindGameObjectWithTag("ArcherPlayer");
 
     }
 
@@ -62,8 +64,12 @@ public class CaCMonsterMovement : MonoBehaviour
                 monster.velocity = new Vector3(0, 0, speed);
         }
 
-        
 
+    }
 
+    public static void SpawnZombie( ref GameObject monster, ref CaCMonsterMovement PrefabZombie)
+    {
+        var PosZombie = new Vector3(134.8f, 0.1f, 5.208689f);
+        monster = PhotonNetwork.Instantiate(PrefabZombie.gameObject.name, PosZombie, Quaternion.identity);
     }
 }
