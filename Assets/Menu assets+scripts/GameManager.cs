@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     [HideInInspector]
     public PlayerMovement LocalPlayer;
+    public int compteur = 0;
 
     private void Awake()
     {
@@ -26,6 +27,17 @@ public class GameManager : MonoBehaviourPunCallbacks
     void Start()
     {
             PlayerMovement.RefreshInstance(ref LocalPlayer, PlayerPrefab, PlayerPrefab2);
+    }
+
+    private void FixedUpdate()
+    {
+        if (compteur ==100)
+        {
+            compteur = 0;
+            PlayerMovement.RefreshInstance(ref LocalPlayer, PlayerPrefab, PlayerPrefab2);
+            Debug.Log("actu instance");
+        }
+        compteur += 1;
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)

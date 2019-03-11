@@ -18,7 +18,6 @@ public class TriggerZombie : MonoBehaviourPun
     {
         if (other.tag == "ArcherPlayer" && !ZombiSpawned)
         {
-
             Debug.Log("spawn zombie");
             ZombiSpawned = true;
             CaCMonsterMovement.SpawnZombie(ref Zombi , ref ZombiePrefab);
