@@ -145,15 +145,15 @@ GameObject:
   - component: {fileID: 2642955357033571954}
   - component: {fileID: 7457351500187777506}
   - component: {fileID: 8412800185057443310}
-  - component: {fileID: 966321637830499342}
   - component: {fileID: 792768961306562735}
   - component: {fileID: 1420993957145175987}
   - component: {fileID: 5464537735627798632}
   - component: {fileID: 8492022142921683534}
   - component: {fileID: 4772357949516120408}
+  - component: {fileID: 4496159557051840184}
   m_Layer: 0
   m_Name: knight
-  m_TagString: Untagged
+  m_TagString: KnightPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,20 +219,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &966321637830499342
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4600060139430010012}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &792768961306562735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,6 +304,20 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!136 &4496159557051840184
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600060139430010012}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6562852678623704477
 GameObject:
   m_ObjectHideFlags: 0

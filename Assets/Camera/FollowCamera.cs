@@ -25,7 +25,7 @@ public class FollowCamera : MonoBehaviourPun
             player = knight.transform;
         }
         transform.position = player.transform.position + offset;
-            //remove comment /down/ to test rotation changes in real time 
-            transform.SetPositionAndRotation(player.transform.position + offset, Quaternion.Euler(angle, 0, 0));
+        //remove comment /down/ to test rotation changes in real time 
+        transform.SetPositionAndRotation(player.transform.position + offset, Quaternion.Euler(angle, 0, 0));
     }
 }
