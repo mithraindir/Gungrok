@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     private void FixedUpdate()
     {
-        if (compteur ==100)
+        if (compteur == 750)
         {
             compteur = 0;
             PlayerMovement.RefreshInstance(ref LocalPlayer, PlayerPrefab, PlayerPrefab2);
