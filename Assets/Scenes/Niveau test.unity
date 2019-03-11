@@ -1300,7 +1300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPrefab: {fileID: 546, guid: b8f2de2e1e91e1c4cac9d4e1073713f3, type: 3}
-  PlayerPrefab2: {fileID: 542, guid: ebe75a0b9742b5c44a13a07cc99b3e3e, type: 3}
+  PlayerPrefab2: {fileID: 792768961306562735, guid: 9f621f2f525a0514f95fb67a8f0285ea,
+    type: 3}
   LocalPlayer: {fileID: 0}
   compteur: 0
 --- !u!4 &890323213
