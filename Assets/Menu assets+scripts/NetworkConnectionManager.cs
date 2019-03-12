@@ -33,8 +33,7 @@ public class NetworkConnectionManager : MonoBehaviourPunCallbacks
 
     public void OnClickConnectToMaster()
     {
-        //PhotonNetwork.NickName = "PlayerName";       //to set a player name
-
+ 
         TriesToConnectToMaster = true;
         PhotonNetwork.ConnectUsingSettings();
         
@@ -47,10 +46,13 @@ public class NetworkConnectionManager : MonoBehaviourPunCallbacks
         TriesToConnectToMaster = false;
         TriesToConnectToRoom = false;
         Debug.Log(cause);
+        SceneManager.LoadScene("Menu");
     }
 
     public override void OnConnectedToMaster()
     {
+        PhotonNetwork.JoinLobby();
+        Debug.Log("room disponible : " + PhotonNetwork.CountOfRooms);
         base.OnConnectedToMaster();
         TriesToConnectToMaster = false;
         Debug.Log("Connected to Master!");
