@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         base.OnPlayerEnteredRoom(newPlayer);
         PlayerMovement.RefreshInstance(ref LocalPlayer, PlayerPrefab, PlayerPrefab2);
+        UpDatedForPlayer2 = false;
     }
 
 }
