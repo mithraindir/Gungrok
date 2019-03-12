@@ -622,10 +622,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 760762c4-8bff-41ba-b190-1267c46ef23e
+  cloudProjectId: e7c3ea91-e4d6-46ad-a375-f52c06c2959e
   framebufferDepthMemorylessMode: 0
-  projectName: New Unity Project (2) (1)
-  organizationId: unity_8chrf0gqlsla4w
+  projectName: "Ouroboros: Gungr\xF6k"
+  organizationId: unity_tffnjkmjr_mztg
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

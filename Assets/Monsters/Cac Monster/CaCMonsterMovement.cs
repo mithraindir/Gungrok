@@ -13,6 +13,8 @@ public class CaCMonsterMovement : MonoBehaviourPun
 
     Vector3 Vector3Knight;
     Vector3 VectorMonster;
+    Vector3 Vector3Archer;
+
     Rigidbody PrefabZombie;
     private Rigidbody monster;
 
@@ -30,35 +32,48 @@ public class CaCMonsterMovement : MonoBehaviourPun
         monster = GetComponent<Rigidbody>();
 
         //get players (for coordinates)
-        knight = GameObject.FindGameObjectWithTag("ArcherPlayer");
+        archer = GameObject.FindGameObjectWithTag("ArcherPlayer");
+        knight = GameObject.FindGameObjectWithTag("KnightPlayer");
+
 
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //monster's coordinates
         VectorMonster = monster.transform.position;
-        float MonsterX = VectorMonster.x;
-        float MonsterZ = VectorMonster.z;
-
 
         //knight's coordinates
         Vector3Knight = knight.transform.position;
-        float KnightX = Vector3Knight.x;
-        float KnightZ = Vector3Knight.z;
+       
+
+        //archer's coordinates
+        Vector3Archer = archer.transform.position;
+        
+
+        //get the closest one
+        Vector3 Closer;
+        if (Vector3.Distance(Vector3Archer, VectorMonster) < Vector3.Distance(Vector3Knight, VectorMonster))
+        {
+            Closer = Vector3Archer;
+        }
+        else
+            Closer = Vector3Knight;
+
+
 
         //Move to the closest direction
-        if (Abs(Abs(KnightX) - Abs(MonsterX)) > Abs(Abs(KnightZ) - Abs(MonsterZ)))
+        if (Abs(Abs(Closer.x) - Abs(VectorMonster.x)) > Abs(Abs(Closer.z) - Abs(VectorMonster.z)))
         {
-            if (KnightX < MonsterX)
+            if (Closer.x < VectorMonster.x)
                 monster.velocity = new Vector3(-speed, 0, 0);
             else
                 monster.velocity = new Vector3(speed, 0, 0);
         }
         else
         {
-            if (KnightZ < MonsterZ)
+            if (Closer.z < VectorMonster.z)
                 monster.velocity = new Vector3(0, 0, -speed);
             else
                 monster.velocity = new Vector3(0, 0, speed);

@@ -16,7 +16,7 @@ public class TriggerZombie : MonoBehaviourPun
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "ArcherPlayer" && !ZombiSpawned)
+        if (other.tag == "ArcherPlayer"  && !ZombiSpawned)
         {
             Debug.Log("spawn zombie");
             ZombiSpawned = true;

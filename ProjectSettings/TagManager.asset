@@ -9,6 +9,7 @@ TagManager:
   - WizardProjectile
   - ArcherPlayer
   - MonsterZombie
+  - ArcherProjectile
   layers:
   - Default
   - TransparentFX
