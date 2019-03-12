@@ -1299,10 +1299,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c8e6370358f8e4aae953dbbfe95200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerPrefab: {fileID: 546, guid: b8f2de2e1e91e1c4cac9d4e1073713f3, type: 3}
+  PlayerPrefab: {fileID: 548, guid: b8f2de2e1e91e1c4cac9d4e1073713f3, type: 3}
   PlayerPrefab2: {fileID: 792768961306562735, guid: 9f621f2f525a0514f95fb67a8f0285ea,
     type: 3}
   LocalPlayer: {fileID: 0}
+  UpDatedForPlayer2: 0
   compteur: 0
 --- !u!4 &890323213
 Transform:

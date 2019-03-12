@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     [HideInInspector]
     public PlayerMovement LocalPlayer;
+
+    public bool UpDatedForPlayer2 = false;
     public int compteur = 0;
 
     private void Awake()
@@ -31,13 +33,18 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     private void FixedUpdate()
     {
-        if (compteur == 50)
+        if (!UpDatedForPlayer2 && PhotonNetwork.CurrentRoom.PlayerCount == 2)
         {
-            compteur = 0;
-            PlayerMovement.RefreshInstance(ref LocalPlayer, PlayerPrefab, PlayerPrefab2);
-            Debug.Log("actu instance");
+
+            compteur += 1;
+            if (compteur == 100)    
+            {
+                UpDatedForPlayer2 = true;
+                compteur = 0;
+                PlayerMovement.RefreshInstance(ref LocalPlayer, PlayerPrefab, PlayerPrefab2);
+                Debug.Log("actu instance");
+            }
         }
-        compteur += 1;
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
