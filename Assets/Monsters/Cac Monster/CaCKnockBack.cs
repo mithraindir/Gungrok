@@ -5,7 +5,7 @@ using UnityEngine;
 public class CaCKnockBack : MonoBehaviour
 {
     //Force is the strengh of the knock back
-    public float force;
+    public float force = 8000;
 
     private void OnCollisionEnter(Collision collision)
     {
