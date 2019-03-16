@@ -2733,7 +2733,7 @@ GameObject:
   - component: {fileID: 1571989470}
   - component: {fileID: 1571989469}
   - component: {fileID: 1571989468}
-  - component: {fileID: 1571989473}
+  - component: {fileID: 1571989472}
   m_Layer: 0
   m_Name: shield
   m_TagString: shield
@@ -2813,7 +2813,7 @@ Transform:
   m_Father: {fileID: 1142319618}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1571989473
+--- !u!114 &1571989472
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2822,7 +2822,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1571989467}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5313836ad90b9754abb15401b956a917, type: 3}
+  m_Script: {fileID: 11500000, guid: e1b6b64df632a7440bcba5dd25b34dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1666773543
