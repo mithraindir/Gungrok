@@ -27,7 +27,7 @@ public class shieldController : MonoBehaviour
             if (vect != Vector3.zero)
                 transform.rotation = Quaternion.LookRotation(vect, Vector3.up);
             transform.position = transform.parent.position;
-            transform.position += transform.forward;
+            transform.position += transform.forward; 
         }
         else
         {

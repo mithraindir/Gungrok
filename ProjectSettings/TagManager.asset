@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - ennemy
   - KnightPlayer
-  - Shield
+  - shield
   layers:
   - Default
   - TransparentFX

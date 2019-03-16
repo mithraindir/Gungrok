@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
             MoveX = Input.GetAxisRaw("HorizontalFR");
         if (MoveX == 0)                                 //to see axis go to edit->project settings->input
             MoveZ = Input.GetAxisRaw("VerticalFR");
-        
+
         //make the player move
         player.velocity = new Vector3(MoveX * speed, 0, MoveZ * speed);
         //used to not return to edfault orientation once movement stop
