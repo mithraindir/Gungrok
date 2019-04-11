@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 388}
   - component: {fileID: 523}
   - component: {fileID: 548}
+  - component: {fileID: 4842261840303557651}
   - component: {fileID: 508}
   - component: {fileID: 549}
   - component: {fileID: 551}
@@ -114,6 +115,19 @@ MonoBehaviour:
   speed: 10
   angle: 0
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &4842261840303557651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c052bfa35516774a955f0151b6d16ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 5000
 --- !u!54 &508
 Rigidbody:
   m_ObjectHideFlags: 0
