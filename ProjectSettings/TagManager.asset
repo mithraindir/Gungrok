@@ -10,8 +10,6 @@ TagManager:
   - ArcherPlayer
   - MonsterZombie
   - ArcherProjectile
-  - ennemy
-  - shield
   layers:
   - Default
   - TransparentFX
