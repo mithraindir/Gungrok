@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6173423391911076541}
   m_Layer: 0
   m_Name: Shield
-  m_TagString: Untagged
+  m_TagString: shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,13 +147,14 @@ GameObject:
   - component: {fileID: 8412800185057443310}
   - component: {fileID: 792768961306562735}
   - component: {fileID: 1420993957145175987}
+  - component: {fileID: 1960770878609572914}
   - component: {fileID: 5464537735627798632}
   - component: {fileID: 8492022142921683534}
   - component: {fileID: 4772357949516120408}
   - component: {fileID: 4496159557051840184}
   m_Layer: 0
   m_Name: Knight
-  m_TagString: KnightPlayer
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -250,6 +251,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &1960770878609572914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600060139430010012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c052bfa35516774a955f0151b6d16ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 5000
 --- !u!114 &5464537735627798632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,7 +347,7 @@ GameObject:
   - component: {fileID: 3367642060764348423}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: KnightPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
