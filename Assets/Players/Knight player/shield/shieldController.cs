@@ -21,7 +21,7 @@ public class shieldController : MonoBehaviour
         {
             if (MoveZ == 0)
                 MoveX = Input.GetAxisRaw("PrimaryX");
-            if (MoveX == 0)                        
+            if (MoveX == 0)
                 MoveZ = Input.GetAxisRaw("PrimaryZ");
             vect = new Vector3(MoveX, 0, MoveZ);
             if (vect != Vector3.zero)
