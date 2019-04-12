@@ -476,7 +476,7 @@ PrefabInstance:
     - target: {fileID: 2669389724598717598, guid: 79384681dd31f404e887a2045b0b5a3e,
         type: 3}
       propertyPath: m_Name
-      value: Prefab salle random
+      value: Salle 2
       objectReference: {fileID: 0}
     - target: {fileID: 2669389724598717570, guid: 79384681dd31f404e887a2045b0b5a3e,
         type: 3}
@@ -532,6 +532,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669389724598717570, guid: 79384681dd31f404e887a2045b0b5a3e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0706137
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6353449633908158457, guid: 79384681dd31f404e887a2045b0b5a3e, type: 3}
@@ -683,7 +688,7 @@ PrefabInstance:
     - target: {fileID: 2669389724598717598, guid: 79384681dd31f404e887a2045b0b5a3e,
         type: 3}
       propertyPath: m_Name
-      value: Prefab salle random (1)
+      value: Salle 3
       objectReference: {fileID: 0}
     - target: {fileID: 2669389724598717570, guid: 79384681dd31f404e887a2045b0b5a3e,
         type: 3}
@@ -739,6 +744,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669389724598717570, guid: 79384681dd31f404e887a2045b0b5a3e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0706137
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6353449633908158457, guid: 79384681dd31f404e887a2045b0b5a3e, type: 3}
@@ -809,6 +819,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669389724598717570, guid: 79384681dd31f404e887a2045b0b5a3e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0706137
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 502209790056872591, guid: 79384681dd31f404e887a2045b0b5a3e, type: 3}

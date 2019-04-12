@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class Knockback : MonoBehaviour
+public class Knockback : MonoBehaviourPun
 {
     GameObject objet;
     Rigidbody objetRB;

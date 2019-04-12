@@ -41,11 +41,22 @@ public class CaCMonsterMovement : MonoBehaviourPun
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (knight == null)
+        {
+            knight = GameObject.FindGameObjectWithTag("KnightPlayer");
+            Vector3Knight = archer.transform.position;
+        }
+        else
+        {
+            //knight's coordinates
+            Vector3Knight = knight.transform.position;
+        }
+
         //monster's coordinates
         VectorMonster = monster.transform.position;
 
-        //knight's coordinates
-        Vector3Knight = knight.transform.position;
+     
+        
        
 
         //archer's coordinates

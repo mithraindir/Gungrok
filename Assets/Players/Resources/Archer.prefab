@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 551}
   - component: {fileID: 550}
   - component: {fileID: 7759114928660721717}
+  - component: {fileID: 175004218188664510}
   m_Layer: 0
   m_Name: Archer
   m_TagString: ArcherPlayer
@@ -199,6 +200,19 @@ MonoBehaviour:
   ReloadTime: 500
   Arrow: {fileID: 980912550745985269}
   prefabArrow: {fileID: 0}
+--- !u!114 &175004218188664510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c052bfa35516774a955f0151b6d16ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 8000
 --- !u!1 &980912550745985269
 GameObject:
   m_ObjectHideFlags: 0

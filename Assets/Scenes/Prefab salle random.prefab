@@ -744,7 +744,7 @@ GameObject:
   - component: {fileID: 5862926887186597318}
   - component: {fileID: 5818931426084788785}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Sol Couloir gauche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
