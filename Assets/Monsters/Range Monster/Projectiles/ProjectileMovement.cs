@@ -8,16 +8,9 @@ public class ProjectileMovement : MonoBehaviour
     Rigidbody projectile;
     public float ProjectileSpeed;
 
-    // Start is called before the first frame update
-    void Start()
+    private void FixedUpdate()
     {
-        projectile = GetComponent<Rigidbody>();
-    }
-
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        // on le fait bouger tout droit
-        projectile.AddForce(transform.forward * ProjectileSpeed);
+            projectile = GetComponent<Rigidbody>();
+            projectile.AddForce(transform.forward * ProjectileSpeed);
     }
 }

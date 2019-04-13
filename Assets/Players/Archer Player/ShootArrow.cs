@@ -8,8 +8,7 @@ public class ShootArrow : MonoBehaviourPun
     public float ReloadTime;
     float RT = 0;
     public GameObject Arrow;
-    
-
+ 
     float compteur = 0;
 
     [Header("First Game Manager")]

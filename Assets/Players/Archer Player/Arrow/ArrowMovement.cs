@@ -7,21 +7,16 @@ public class ArrowMovement : MonoBehaviourPun
 {
     Rigidbody projectile;
     public float ProjectileSpeed;
-
     
-    float Speed;
     
 
     
     // Update is called once per frame
     void FixedUpdate()
     {
-        
-        if (!projectile)
-            projectile = GetComponent<Rigidbody>();
 
-        // on le fait bouger tout droit
-        projectile.AddForce(transform.forward * ProjectileSpeed);
+            projectile = GetComponent<Rigidbody>();
+            projectile.AddForce(transform.forward * ProjectileSpeed);
     }
 
     public static bool CreateArrow(ref GameObject Arrow, ref ArrowMovement prefabArrow, float ReloadTime, float RT)
@@ -46,6 +41,7 @@ public class ArrowMovement : MonoBehaviourPun
 
                 Arrow = PhotonNetwork.Instantiate(prefabArrow.gameObject.name, vect, Quaternion.LookRotation(vect, Vector3.up));
                 Arrow.transform.position = Archer.transform.position + 2 * Arrow.transform.forward;
+                
                 return true;
             }
         }

@@ -74,9 +74,10 @@
     <Compile Include="Assets\Menu assets+scripts\NetworkConnectionManager.cs" />
     <Compile Include="Assets\Monsters\Cac Monster\CaCMonsterMovement.cs" />
     <Compile Include="Assets\Monsters\MobHealth.cs" />
-    <Compile Include="Assets\Monsters\Range Monster\MoveOrShoot.cs" />
-    <Compile Include="Assets\Monsters\Range Monster\Projectiles\DestructionOnContact.cs" />
+    <Compile Include="Assets\Monsters\Range Monster\Projectiles\CreateProjectile.cs" />
     <Compile Include="Assets\Monsters\Range Monster\Projectiles\ProjectileMovement.cs" />
+    <Compile Include="Assets\Monsters\Range Monster\Projectiles\WizProjDestruction.cs" />
+    <Compile Include="Assets\Monsters\Range Monster\WizGetAction.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
@@ -193,7 +194,6 @@
     <Compile Include="Assets\Players\Knight player\shield\shieldController.cs" />
     <Compile Include="Assets\Players\knockBack\Knockback.cs" />
     <Compile Include="Assets\Players\TriggerZombie.cs" />
-    <Compile Include="Assets\SpawnArrow.cs" />
     <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
     <None Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Kenney Assets\Copyrights.txt" />
     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
