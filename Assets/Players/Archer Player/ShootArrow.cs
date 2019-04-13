@@ -6,7 +6,7 @@ using Photon.Pun;
 public class ShootArrow : MonoBehaviourPun
 {
     public float ReloadTime;
-    
+    float RT = 0;
     public GameObject Arrow;
     
 
@@ -21,11 +21,10 @@ public class ShootArrow : MonoBehaviourPun
     // Update is called once per frame
     void FixedUpdate()
     {
-        
-
-            ArrowMovement.CreateArrow(ref Arrow, ref prefabArrow);
-            compteur = ReloadTime;
-        
+        if (ArrowMovement.CreateArrow(ref Arrow, ref prefabArrow, ReloadTime, RT))
+            RT = 0;
+        else
+            RT += 1;
         
     }
 

@@ -9,6 +9,7 @@ public class ArrowDestruction : MonoBehaviourPun
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(this.gameObject);
+        if (!collision.gameObject.CompareTag("ArcherPlayer") && !collision.gameObject.CompareTag("KnightPlayer"))
+            Destroy(this.gameObject);
     }
 }
