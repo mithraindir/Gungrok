@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72f36c0514da2774d96f8c6fdcde7e06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReloadTime: 500
+  ReloadTime: 70
   Arrow: {fileID: 708077401173783450, guid: 4ebdbfd4c74d65e4c8a630158958301f, type: 3}
   prefabArrow: {fileID: 1012204835023802943, guid: 4ebdbfd4c74d65e4c8a630158958301f,
     type: 3}

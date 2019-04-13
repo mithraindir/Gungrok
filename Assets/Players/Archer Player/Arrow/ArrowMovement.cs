@@ -36,7 +36,7 @@ public class ArrowMovement : MonoBehaviourPun
         {
             if (Input.GetAxisRaw("PrimaryX") != 0 || Input.GetAxisRaw("PrimaryZ") != 0)
             {
-                Debug.Log("shot fired!");
+                
                 if (MoveZ == 0)
                     MoveX = Input.GetAxisRaw("PrimaryX");
                 if (MoveX == 0)
