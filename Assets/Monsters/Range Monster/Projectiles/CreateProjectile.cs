@@ -15,7 +15,7 @@ public class CreateProjectile : MonoBehaviourPun
     Rigidbody projectile;
     public float ProjectileSpeed = 80;
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         projectile = GetComponent<Rigidbody>();
         projectile.AddForce(transform.forward * ProjectileSpeed);
