@@ -9,8 +9,11 @@ public class ArrowDestruction : MonoBehaviourPun
 
     private void OnCollisionEnter(Collision collision)
     {
+           if (PhotonNetwork.LocalPlayer.NickName == "Player 1")
+        {
             if (!collision.gameObject.CompareTag("ArcherPlayer") && !collision.gameObject.CompareTag("KnightPlayer"))
                 PhotonNetwork.Destroy(this.gameObject);
-        
+        }
+            
     }
 }
