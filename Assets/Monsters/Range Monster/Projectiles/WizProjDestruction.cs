@@ -10,7 +10,7 @@ public class WizProjDestruction : MonoBehaviourPun
         if(PhotonNetwork.LocalPlayer.NickName == "Player 1")
         {
             if (!collision.gameObject.CompareTag("ennemy"))
-                PhotonNetwork.Destroy(this.gameObject);
+                PhotonNetwork.Destroy(gameObject);
         }
         
     }
