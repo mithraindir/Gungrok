@@ -29,20 +29,23 @@ public class ArrowMovement : MonoBehaviourPun
 
         if (RT >= ReloadTime)
         {
-            if (Input.GetAxisRaw("PrimaryX") != 0 || Input.GetAxisRaw("PrimaryZ") != 0)
+            if (PhotonNetwork.LocalPlayer.NickName == "Player 1")
             {
-                
-                if (MoveZ == 0)
-                    MoveX = Input.GetAxisRaw("PrimaryX");
-                if (MoveX == 0)
-                    MoveZ = Input.GetAxisRaw("PrimaryZ");
+                if (Input.GetAxisRaw("PrimaryX") != 0 || Input.GetAxisRaw("PrimaryZ") != 0)
+                {
 
-                vect = new Vector3(MoveX, 0, MoveZ);
+                    if (MoveZ == 0)
+                        MoveX = Input.GetAxisRaw("PrimaryX");
+                    if (MoveX == 0)
+                        MoveZ = Input.GetAxisRaw("PrimaryZ");
 
-                Arrow = PhotonNetwork.Instantiate(prefabArrow.gameObject.name, vect, Quaternion.LookRotation(vect, Vector3.up));
-                Arrow.transform.position = Archer.transform.position + 2 * Arrow.transform.forward;
-                
-                return true;
+                    vect = new Vector3(MoveX, 0, MoveZ);
+
+                    Arrow = PhotonNetwork.Instantiate(prefabArrow.gameObject.name, vect, Quaternion.LookRotation(vect, Vector3.up));
+                    Arrow.transform.position = Archer.transform.position + 2 * Arrow.transform.forward;
+
+                    return true;
+                }
             }
         }
         return false;
