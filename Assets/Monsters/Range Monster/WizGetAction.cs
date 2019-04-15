@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class WizGetAction : MonoBehaviour
+using Photon.Pun;
+public class WizGetAction : MonoBehaviourPun
 {
     public float ReloadTime = 200;
     float compteurRT = 0;
 
+    Rigidbody PrefabWizzard;
 
     public float DureeDeplacement = 200;
     public float ReloadDeplacement = 800;
@@ -29,7 +30,14 @@ public class WizGetAction : MonoBehaviour
         {
             compteurRT += 1;
         }
-
-
     }
+
+    public static void SpawnWizzard(ref GameObject monster, ref WizGetAction PrefabWizzard, Vector3 Position)
+    {
+        if (PhotonNetwork.LocalPlayer.NickName == "Player 1")
+        {
+            monster = PhotonNetwork.Instantiate(PrefabWizzard.gameObject.name, Position, Quaternion.identity);
+        }
+    }
+
 }
