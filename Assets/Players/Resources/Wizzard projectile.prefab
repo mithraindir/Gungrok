@@ -14,11 +14,10 @@ GameObject:
   - component: {fileID: 1592307887811976208}
   - component: {fileID: 4629388858130101522}
   - component: {fileID: 3220834566910812574}
-  - component: {fileID: 8334879261150625123}
-  - component: {fileID: 875424726314549566}
-  - component: {fileID: 8862634335527989088}
-  - component: {fileID: 7002821405012608447}
   - component: {fileID: 507898251965503730}
+  - component: {fileID: 3505142941836661946}
+  - component: {fileID: 8394242691746167432}
+  - component: {fileID: 9100784012778073454}
   m_Layer: 0
   m_Name: Wizzard projectile
   m_TagString: ArcherProjectile
@@ -128,7 +127,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!114 &8334879261150625123
+--- !u!114 &507898251965503730
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,10 +136,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 708077401173783450}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e963375553a40644949a592a1f5f0f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 74cb6a4f06673424089112943794ef1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &875424726314549566
+--- !u!114 &3505142941836661946
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,12 +157,12 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 8862634335527989088}
-  - {fileID: 7002821405012608447}
+  - {fileID: 8394242691746167432}
+  - {fileID: 9100784012778073454}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &8862634335527989088
+--- !u!114 &8394242691746167432
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,7 +178,7 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &7002821405012608447
+--- !u!114 &9100784012778073454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,15 +193,3 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
---- !u!114 &507898251965503730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708077401173783450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74cb6a4f06673424089112943794ef1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
