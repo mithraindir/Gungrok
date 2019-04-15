@@ -20,7 +20,7 @@ public class TriggerZombie : MonoBehaviourPun
         {
             Debug.Log("spawn zombie");
             ZombiSpawned = true;
-            CaCMonsterMovement.SpawnZombie(ref Zombi , ref ZombiePrefab);
+            CaCMonsterMovement.SpawnZombie(ref Zombi , ref ZombiePrefab, 134.8f, 0.1f, 5.208689f);
             
         }
     }
