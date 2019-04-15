@@ -41,7 +41,7 @@ public class ArrowMovement : MonoBehaviourPun
 
                     vect = new Vector3(MoveX, 0, MoveZ);
 
-                    Arrow = PhotonNetwork.Instantiate(prefabArrow.gameObject.name, vect, Quaternion.LookRotation(vect, Vector3.up));
+                    Arrow = PhotonNetwork.Instantiate(prefabArrow.gameObject.name, vect,Quaternion.LookRotation(vect, Vector3.up));
                     Arrow.transform.position = Archer.transform.position + 2 * Arrow.transform.forward;
 
                     return true;

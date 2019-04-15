@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviourPun
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (photonView.IsMine)
+        if (photonView.IsMine )
         {
             if (MoveZ == 0)
                 MoveX = Input.GetAxisRaw("HorizontalFR");
