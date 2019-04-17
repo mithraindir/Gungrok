@@ -74,7 +74,6 @@
     <Compile Include="Assets\Menu assets+scripts\NetworkConnectionManager.cs" />
     <Compile Include="Assets\Monsters\Cac Monster\CaCMonsterMovement.cs" />
     <Compile Include="Assets\Monsters\MobHealth.cs" />
-    <Compile Include="Assets\Monsters\Range Monster\Projectiles\CreateProjectile.cs" />
     <Compile Include="Assets\Monsters\Range Monster\Projectiles\ProjectileMovement.cs" />
     <Compile Include="Assets\Monsters\Range Monster\Projectiles\WizProjDestruction.cs" />
     <Compile Include="Assets\Monsters\Range Monster\WizGetAction.cs" />

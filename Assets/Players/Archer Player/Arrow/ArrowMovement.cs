@@ -5,7 +5,7 @@ using Photon.Pun;
 
 public class ArrowMovement : MonoBehaviourPun
 {
-    Rigidbody projectile;
+    
     public float ProjectileSpeed;
     
     
@@ -15,8 +15,7 @@ public class ArrowMovement : MonoBehaviourPun
     void FixedUpdate()
     {
 
-            projectile = GetComponent<Rigidbody>();
-            projectile.AddForce(transform.forward * ProjectileSpeed);
+            GetComponent<Rigidbody>().AddForce(transform.forward * ProjectileSpeed);
     }
 
     public static bool CreateArrow(ref GameObject Arrow, ref ArrowMovement prefabArrow, float ReloadTime, float RT)
@@ -41,8 +40,8 @@ public class ArrowMovement : MonoBehaviourPun
 
                     vect = new Vector3(MoveX, 0, MoveZ);
 
-                    Arrow = PhotonNetwork.Instantiate(prefabArrow.gameObject.name, vect,Quaternion.LookRotation(vect, Vector3.up));
-                    Arrow.transform.position = Archer.transform.position + 2 * Arrow.transform.forward;
+                    PhotonNetwork.Instantiate(prefabArrow.gameObject.name, Archer.transform.position + vect, Quaternion.LookRotation(vect, Vector3.up));
+                    
 
                     return true;
                 }
