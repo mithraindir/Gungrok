@@ -10,17 +10,28 @@ public class DoorManager : MonoBehaviour
    
     public bool IsClosed = false;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
+
         if (!IsClosed)
         {
+            if (collision.gameObject.tag == "ArcherPlayer")
+            {
+                //tp le guerrier sur l'archer
+                if (GameObject.FindGameObjectWithTag("KnightPlayer"))
+                {
+                    GameObject.FindGameObjectWithTag("KnightPlayer").transform.position = collision.gameObject.transform.position;
+                }
 
-            Door1.GetComponent<MeshRenderer>().enabled = true;
-            Door2.GetComponent<MeshRenderer>().enabled = true;
+                Door1.GetComponent<MeshRenderer>().enabled = true;
+                Door2.GetComponent<MeshRenderer>().enabled = true;
 
-            Door1.GetComponent<BoxCollider>().enabled = true;
-            Door2.GetComponent<BoxCollider>().enabled = true;
-            IsClosed = true;
+                Door1.GetComponent<BoxCollider>().enabled = true;
+                Door2.GetComponent<BoxCollider>().enabled = true;
+                IsClosed = true;
+                IsClosed = true;
+            }
+            
         }
     }
 

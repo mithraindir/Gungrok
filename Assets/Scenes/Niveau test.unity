@@ -335,10 +335,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2669389724598717598, guid: 79384681dd31f404e887a2045b0b5a3e,
+    - target: {fileID: 2253154068538063367, guid: 79384681dd31f404e887a2045b0b5a3e,
         type: 3}
-      propertyPath: m_Name
-      value: Salle 1-2
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2669389724598717570, guid: 79384681dd31f404e887a2045b0b5a3e,
         type: 3}
@@ -400,10 +400,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.0706137
       objectReference: {fileID: 0}
-    - target: {fileID: 2253154068538063367, guid: 79384681dd31f404e887a2045b0b5a3e,
+    - target: {fileID: 2669389724598717598, guid: 79384681dd31f404e887a2045b0b5a3e,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_Name
+      value: Salle 1-2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6353449633908158457, guid: 79384681dd31f404e887a2045b0b5a3e, type: 3}
@@ -415,11 +415,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5339717028647368196, guid: ef23928c642e0e643897e2ad8792464e,
-        type: 3}
-      propertyPath: m_Name
-      value: Salle 1-0
-      objectReference: {fileID: 0}
     - target: {fileID: 3212467023005940922, guid: ef23928c642e0e643897e2ad8792464e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -475,6 +470,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5339717028647368196, guid: ef23928c642e0e643897e2ad8792464e,
+        type: 3}
+      propertyPath: m_Name
+      value: Salle 1-0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef23928c642e0e643897e2ad8792464e, type: 3}
 --- !u!1001 &2086829403
@@ -484,11 +484,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2669389724598717598, guid: 79384681dd31f404e887a2045b0b5a3e,
-        type: 3}
-      propertyPath: m_Name
-      value: Salle 1-1
-      objectReference: {fileID: 0}
     - target: {fileID: 2669389724598717570, guid: 79384681dd31f404e887a2045b0b5a3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -544,6 +539,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2669389724598717598, guid: 79384681dd31f404e887a2045b0b5a3e,
+        type: 3}
+      propertyPath: m_Name
+      value: Salle 1-1
+      objectReference: {fileID: 0}
     - target: {fileID: 6635670598967645367, guid: 79384681dd31f404e887a2045b0b5a3e,
         type: 3}
       propertyPath: Wizzard
@@ -568,6 +568,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3265412491217517924, guid: 6f7556f61844cc34c85f84341b9849ed,
         type: 3}
+    - target: {fileID: 6674811651234586832, guid: 79384681dd31f404e887a2045b0b5a3e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674811651234586832, guid: 79384681dd31f404e887a2045b0b5a3e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79384681dd31f404e887a2045b0b5a3e, type: 3}
 --- !u!1001 &3543330569289922511
