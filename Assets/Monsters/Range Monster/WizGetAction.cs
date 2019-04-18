@@ -118,12 +118,15 @@ public class WizGetAction : MonoBehaviourPun
         }
     }
 
-    public static void SpawnWizzard(ref GameObject monster, ref WizGetAction PrefabWizzard, Vector3 Position)
+    public static GameObject SpawnWizzard(ref GameObject monster, ref WizGetAction PrefabWizzard, Vector3 Position)
     {
         if (PhotonNetwork.LocalPlayer.NickName == "Player 1")
         {
-            PhotonNetwork.Instantiate(PrefabWizzard.gameObject.name, Position, Quaternion.identity);
+            GameObject Wizzard = PhotonNetwork.Instantiate(PrefabWizzard.gameObject.name, Position, Quaternion.identity);
+            return Wizzard;
         }
+
+        return null;
     }
 
 }

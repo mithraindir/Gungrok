@@ -11,7 +11,12 @@ public class MobHealth : MonoBehaviourPun
     {
         if (collision.gameObject.CompareTag("ArcherProjectile"))
             HealthPoint -= 1;
+
         if (HealthPoint == 0)
+        {
+            MonsterList.DeleteMonster(this.gameObject);
             PhotonNetwork.Destroy(this.gameObject);
+
+        }
     }
 }

@@ -193,6 +193,10 @@
     <Compile Include="Assets\Players\Knight player\shield\shieldController.cs" />
     <Compile Include="Assets\Players\knockBack\Knockback.cs" />
     <Compile Include="Assets\Players\TriggerZombie.cs" />
+    <Compile Include="Assets\Scenes\MonsterList.cs" />
+    <Compile Include="Assets\Scenes\Rooms\DoorManager.cs" />
+    <Compile Include="Assets\Scenes\Rooms\MobSpawner.cs" />
+    <Compile Include="Assets\Scenes\Rooms\Salle 1-1\Initializer1_1.cs" />
     <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
     <None Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Kenney Assets\Copyrights.txt" />
     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
