@@ -197,6 +197,8 @@
     <Compile Include="Assets\Scenes\Rooms\DoorManager.cs" />
     <Compile Include="Assets\Scenes\Rooms\MobSpawner.cs" />
     <Compile Include="Assets\Scenes\Rooms\Salle 1-1\Initializer1_1.cs" />
+    <Compile Include="Assets\Scenes\Rooms\Salle 1-2\Initializer1_2.cs" />
+    <Compile Include="Assets\Scenes\Rooms\Salle 1-3\Initializer1_3.cs" />
     <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
     <None Include="Assets\Photon\PhotonUnityNetworking\Demos\DemoSlotRacer\Kenney Assets\Copyrights.txt" />
     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
@@ -421,6 +423,12 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>E:/Gungrok/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>E:/Gungrok/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>E:/Gungrok/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
@@ -435,12 +443,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>E:/Gungrok/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="Photon3Unity3D">
-      <HintPath>E:/Gungrok/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>E:/Gungrok/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>E:/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
