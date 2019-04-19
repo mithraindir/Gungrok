@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 1940125257274812467}
   - component: {fileID: 5753222583374818165}
   - component: {fileID: 6084778977069429232}
-  - component: {fileID: 5418815237622198703}
+  - component: {fileID: 1186333665596775254}
   m_Layer: 0
   m_Name: TriggerEnter(droit)
   m_TagString: Untagged
@@ -183,7 +183,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.99999994, z: 0.9999999}
   m_Center: {x: -0.000015258789, y: -0.000000059604645, z: 0.00000047683713}
---- !u!114 &5418815237622198703
+--- !u!114 &1186333665596775254
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 547803844942510905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e20a4b791218a3e4ca06facf016cfc9e, type: 3}
+  m_Script: {fileID: 11500000, guid: 63bc66a5eaf5a3540ad58f9306ed339b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 8175671793819272894}
@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 4583755089907058573}
   - component: {fileID: 7894738625332236676}
   - component: {fileID: 4906959457237504577}
-  - component: {fileID: 6884549625663899884}
+  - component: {fileID: 4041921591620880955}
   m_Layer: 0
   m_Name: TriggerLeave(gauche)
   m_TagString: Untagged
@@ -570,7 +570,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.99999994, z: 0.9999999}
   m_Center: {x: -0.000015258789, y: -0.000000059604645, z: 0.00000047683713}
---- !u!114 &6884549625663899884
+--- !u!114 &4041921591620880955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -579,7 +579,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1408197824543599821}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb84e18aa9e0445821fdece7c86edc, type: 3}
+  m_Script: {fileID: 11500000, guid: 115aac8650e4fe445b95aa44c0ecc7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 8175671793819272894}
@@ -978,8 +978,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 542ffabcd9afa0e44b0850c4e7e4836b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Zombie: {fileID: 6581788161811340097, guid: 6f7556f61844cc34c85f84341b9849ed, type: 3}
-  ZombiePrefab: {fileID: 3265412491217517924, guid: 6f7556f61844cc34c85f84341b9849ed,
+  Zombie: {fileID: 2677904035674569506, guid: 4ae899cb6c8d73a40bad0d75607c1e11, type: 3}
+  ZombiePrefab: {fileID: 262345729595618303, guid: 4ae899cb6c8d73a40bad0d75607c1e11,
     type: 3}
   Wizzard: {fileID: 5380596921883391199, guid: 011db1be69d01b74d9ff28c949b86730, type: 3}
   WizzardPrefab: {fileID: 7897022834449991905, guid: 011db1be69d01b74d9ff28c949b86730,
@@ -1008,7 +1008,7 @@ GameObject:
   - component: {fileID: 3974108462633325829}
   - component: {fileID: 5392487579010684687}
   - component: {fileID: 7741967768595223804}
-  - component: {fileID: 3696576424612470976}
+  - component: {fileID: 8374481641715688576}
   m_Layer: 0
   m_Name: TriggerLeave(droit)
   m_TagString: Untagged
@@ -1088,7 +1088,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.99999994, z: 0.9999999}
   m_Center: {x: -0.000015258789, y: -0.000000059604645, z: 0.00000047683713}
---- !u!114 &3696576424612470976
+--- !u!114 &8374481641715688576
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4562494614006366406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb84e18aa9e0445821fdece7c86edc, type: 3}
+  m_Script: {fileID: 11500000, guid: 115aac8650e4fe445b95aa44c0ecc7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 8175671793819272894}
@@ -1203,7 +1203,7 @@ GameObject:
   - component: {fileID: 7413675313341980495}
   - component: {fileID: 8175671793819272894}
   - component: {fileID: 9044640921249288871}
-  - component: {fileID: 358925155353152931}
+  - component: {fileID: 3140361891735285145}
   m_Layer: 0
   m_Name: RC 1-3
   m_TagString: Untagged
@@ -1275,7 +1275,7 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6297641744761757673}
   m_Enabled: 1
---- !u!114 &358925155353152931
+--- !u!114 &3140361891735285145
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1284,7 +1284,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6297641744761757673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bee4bdc1aa6b98479f09bc65189360c, type: 3}
+  m_Script: {fileID: 11500000, guid: 491a3c07eab58734a95790eefac07ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 48, z: -28}
@@ -1483,7 +1483,7 @@ GameObject:
   - component: {fileID: 573452854283579559}
   - component: {fileID: 8175010801261125167}
   - component: {fileID: 1295917416544339990}
-  - component: {fileID: 6450696834032998254}
+  - component: {fileID: 7964340555041403556}
   m_Layer: 0
   m_Name: TriggerEnter(gauche)
   m_TagString: Untagged
@@ -1563,7 +1563,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 0.99999994, z: 0.9999999}
   m_Center: {x: -0.000015258789, y: -0.000000059604645, z: 0.00000047683713}
---- !u!114 &6450696834032998254
+--- !u!114 &7964340555041403556
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1572,7 +1572,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8517539438767216692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e20a4b791218a3e4ca06facf016cfc9e, type: 3}
+  m_Script: {fileID: 11500000, guid: 63bc66a5eaf5a3540ad58f9306ed339b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 8175671793819272894}

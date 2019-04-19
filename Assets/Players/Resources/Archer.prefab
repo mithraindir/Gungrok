@@ -18,11 +18,11 @@ GameObject:
   - component: {fileID: 623}
   - component: {fileID: 691}
   - component: {fileID: 654}
-  - component: {fileID: 677}
+  - component: {fileID: 3942277389312176309}
   - component: {fileID: 621}
   - component: {fileID: 568}
   - component: {fileID: 569}
-  - component: {fileID: 683}
+  - component: {fileID: 12119535496377763}
   m_Layer: 0
   m_Name: Archer
   m_TagString: ArcherPlayer
@@ -187,9 +187,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReloadTime: 70
-  Arrow: {fileID: 708077401173783450, guid: 4ebdbfd4c74d65e4c8a630158958301f, type: 3}
-  prefabArrow: {fileID: 1012204835023802943, guid: 4ebdbfd4c74d65e4c8a630158958301f,
-    type: 3}
+  Arrow: {fileID: 245, guid: 4ebdbfd4c74d65e4c8a630158958301f, type: 3}
+  prefabArrow: {fileID: 660, guid: 4ebdbfd4c74d65e4c8a630158958301f, type: 3}
 --- !u!114 &654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,7 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength: 8000
---- !u!114 &677
+--- !u!114 &3942277389312176309
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,7 +211,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b01faa32b80d6094cb994968956fd7b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 09246664b55c64e46ada8f55902ac7ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
@@ -335,7 +334,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &683
+--- !u!114 &12119535496377763
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -344,11 +343,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 357ae7fff583b254c9b954119744d43e, type: 3}
+  m_Script: {fileID: 11500000, guid: ca6b26dfc7493a04f84d5b4adba69be1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windCircle_prefab: {fileID: 624985705145695905, guid: 8a0cbf5b465d23842b6a0e72f689e1ab,
-    type: 3}
+  windCircle_prefab: {fileID: 244, guid: 8a0cbf5b465d23842b6a0e72f689e1ab, type: 3}
   timerRef: 10
   effectTimeRef: 1
 --- !u!1 &247
@@ -891,7 +889,7 @@ GameObject:
   m_Component:
   - component: {fileID: 609}
   - component: {fileID: 651}
-  - component: {fileID: 684}
+  - component: {fileID: 6409945249891296397}
   m_Layer: 5
   m_Name: ShildBashSlider
   m_TagString: shildBashSlider
@@ -969,7 +967,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &684
+--- !u!114 &6409945249891296397
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -978,12 +976,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73b7f29c98fe8b42801239a8977d22c, type: 3}
+  m_Script: {fileID: 11500000, guid: 52e4b407a63279d44b74a25fa4fdc44a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReadyColorSlider: {r: 0.8679245, g: 0.82881975, b: 0.1514774, a: 1}
-  ChargingColorSlider: {r: 1, g: 1, b: 1, a: 1}
-  ReadyColorOutside: {r: 0.8679343, g: 0.8867924, b: 0.27189392, a: 0.5803922}
+  ReadyColorSlider: {r: 0.8666667, g: 0.827451, b: 0.15294118, a: 0}
+  ChargingColorSlider: {r: 1, g: 1, b: 1, a: 0}
+  ReadyColorOutside: {r: 0.8666667, g: 0.8862745, b: 0.27058825, a: 0.5803922}
   CharginngColorOutside: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 0.5803922}
 --- !u!1 &265
 GameObject:

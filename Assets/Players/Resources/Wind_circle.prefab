@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 542}
   - component: {fileID: 472}
   - component: {fileID: 573}
-  - component: {fileID: 698}
   - component: {fileID: 674}
   - component: {fileID: 690}
+  - component: {fileID: 3506518265087493219}
   m_Layer: 0
   m_Name: Wind_circle
   m_TagString: Untagged
@@ -94,19 +94,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbf9d421d716a7d41a420d2dd3c8b253, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  windStrength: 100
 --- !u!114 &674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,3 +131,16 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!114 &3506518265087493219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d218925ce9865f4e990aea72733228a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windStrength: 100
