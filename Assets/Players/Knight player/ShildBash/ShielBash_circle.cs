@@ -16,7 +16,6 @@ public class ShielBash_circle : MonoBehaviourPun
     float effectTime = 0;
     float timer = 0f;
     bool effect = false;
-    bool once = true;
 
     private void Start()
     {
@@ -36,14 +35,13 @@ public class ShielBash_circle : MonoBehaviourPun
         {
             windCircle = PhotonNetwork.Instantiate(windCircle_prefab.gameObject.name, this.transform.position, Quaternion.identity, 0); //instantiate the windCircle and places it on the player
             effectTime = 0; //réinitialise le temps d'effet
-            timer = 0;//réinitialise le cooldown
+            timer = 0f;//réinitialise le cooldown
             effect = true;
         }
 
         //cheat to regain full timer 
         if (Input.GetKeyDown(KeyCode.Alpha2))
             timer = timerRef;
-
 
         //effect time loop
         if (effect)

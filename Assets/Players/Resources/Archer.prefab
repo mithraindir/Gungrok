@@ -953,7 +953,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 612}
   m_HandleRect: {fileID: 0}
@@ -979,8 +979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52e4b407a63279d44b74a25fa4fdc44a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReadyColorSlider: {r: 0.8666667, g: 0.827451, b: 0.15294118, a: 0}
-  ChargingColorSlider: {r: 1, g: 1, b: 1, a: 0}
+  ReadyColorSlider: {r: 0.8666667, g: 0.827451, b: 0.15294118, a: 1}
+  ChargingColorSlider: {r: 1, g: 1, b: 1, a: 1}
   ReadyColorOutside: {r: 0.8666667, g: 0.8862745, b: 0.27058825, a: 0.5803922}
   CharginngColorOutside: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 0.5803922}
 --- !u!1 &265
