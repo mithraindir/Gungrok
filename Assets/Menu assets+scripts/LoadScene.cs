@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public class ClickStartButton : MonoBehaviour
+public class LoadScene : MonoBehaviour
 {
-    public void JoinRoomSelection(int Index)
+    public void LoadRoomSelection()
     {
-        SceneManager.LoadScene(Index);
+        SceneManager.LoadScene("Room Selection");
     }
 }

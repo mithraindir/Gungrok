@@ -1,10 +1,10 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class QuitOnClick : MonoBehaviour
 {
-
-    public void Quit()
+    public void QuitGame()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
@@ -12,5 +12,4 @@ public class QuitOnClick : MonoBehaviour
         Application.Quit ();
 #endif
     }
-
 }
