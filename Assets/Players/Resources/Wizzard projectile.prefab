@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 7174029694240938011}
   - component: {fileID: 4559036105307826636}
   - component: {fileID: 2965104570917267817}
-  - component: {fileID: 1592307887811976208}
   - component: {fileID: 4629388858130101522}
   - component: {fileID: 3220834566910812574}
   - component: {fileID: 507898251965503730}
   - component: {fileID: 3505142941836661946}
   - component: {fileID: 8394242691746167432}
   - component: {fileID: 9100784012778073454}
+  - component: {fileID: 8242396640011749095}
   m_Layer: 0
   m_Name: Wizzard projectile
   m_TagString: ArcherProjectile
@@ -84,19 +84,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1592307887811976208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708077401173783450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc5e74430f38c4541a7594c2630c68bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ProjectileSpeed: 5
 --- !u!136 &4629388858130101522
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -193,3 +180,16 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!114 &8242396640011749095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708077401173783450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77e257e3832b5741825fa3b0b6b62c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProjectileSpeed: 80

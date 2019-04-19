@@ -29,8 +29,10 @@ public class DoorManager : MonoBehaviour
                 Door1.GetComponent<BoxCollider>().enabled = true;
                 Door2.GetComponent<BoxCollider>().enabled = true;
                 IsClosed = true;
-                IsClosed = true;
+                
             }
+
+            
             
         }
     }
@@ -47,6 +49,8 @@ public class DoorManager : MonoBehaviour
 
                 Door1.GetComponent<BoxCollider>().enabled = false;
                 Door2.GetComponent<BoxCollider>().enabled = false;
+
+
             }
         }
     }

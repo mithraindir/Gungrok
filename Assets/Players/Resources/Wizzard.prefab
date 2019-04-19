@@ -116,7 +116,7 @@ MonoBehaviour:
   VitesseDeplacement: 60
   projectile: {fileID: 708077401173783450, guid: d0c1c40632cabbb41a95d56cdfb88878,
     type: 3}
-  PrefabProjectile: {fileID: 1592307887811976208, guid: d0c1c40632cabbb41a95d56cdfb88878,
+  PrefabProjectile: {fileID: 8242396640011749095, guid: d0c1c40632cabbb41a95d56cdfb88878,
     type: 3}
 --- !u!114 &8959355510915301325
 MonoBehaviour:
