@@ -11,6 +11,10 @@ TagManager:
   - MonsterZombie
   - ArcherProjectile
   - ennemy
+  - shield
+  - shildBashSlider
+  - healthSlider
+  - ennemyProjectile
   layers:
   - Default
   - TransparentFX

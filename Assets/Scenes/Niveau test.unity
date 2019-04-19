@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -265,6 +265,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 599418863, guid: 8060694e8d14ca84099257c9a1d0ab29, type: 3}
+      propertyPath: Zombie
+      value: 
+      objectReference: {fileID: 2677904035674569506, guid: 4ae899cb6c8d73a40bad0d75607c1e11,
+        type: 3}
+    - target: {fileID: 599418863, guid: 8060694e8d14ca84099257c9a1d0ab29, type: 3}
+      propertyPath: ZombiePrefab
+      value: 
+      objectReference: {fileID: 262345729595618303, guid: 4ae899cb6c8d73a40bad0d75607c1e11,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8060694e8d14ca84099257c9a1d0ab29, type: 3}
 --- !u!1001 &600743455
@@ -334,6 +344,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7758790172042319382, guid: 03f6d59d6cf326a4da5879b243909443,
+        type: 3}
+      propertyPath: Zombie
+      value: 
+      objectReference: {fileID: 2677904035674569506, guid: 4ae899cb6c8d73a40bad0d75607c1e11,
+        type: 3}
+    - target: {fileID: 7758790172042319382, guid: 03f6d59d6cf326a4da5879b243909443,
+        type: 3}
+      propertyPath: ZombiePrefab
+      value: 
+      objectReference: {fileID: 262345729595618303, guid: 4ae899cb6c8d73a40bad0d75607c1e11,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03f6d59d6cf326a4da5879b243909443, type: 3}
 --- !u!1001 &765895817
@@ -403,6 +425,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 322047851699789300, guid: 832109f11e4d77f4cbddcf28f0505ffb,
+        type: 3}
+      propertyPath: Zombie
+      value: 
+      objectReference: {fileID: 2677904035674569506, guid: 4ae899cb6c8d73a40bad0d75607c1e11,
+        type: 3}
+    - target: {fileID: 322047851699789300, guid: 832109f11e4d77f4cbddcf28f0505ffb,
+        type: 3}
+      propertyPath: ZombiePrefab
+      value: 
+      objectReference: {fileID: 262345729595618303, guid: 4ae899cb6c8d73a40bad0d75607c1e11,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 832109f11e4d77f4cbddcf28f0505ffb, type: 3}
 --- !u!1001 &853355347
@@ -472,6 +506,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2987147980601698614, guid: 92a1f6b349a0df740af4e1405764135c,
+        type: 3}
+      propertyPath: IsClosed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2987147980601698614, guid: 92a1f6b349a0df740af4e1405764135c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380252534808162247, guid: 92a1f6b349a0df740af4e1405764135c,
+        type: 3}
+      propertyPath: Zombie
+      value: 
+      objectReference: {fileID: 2677904035674569506, guid: 4ae899cb6c8d73a40bad0d75607c1e11,
+        type: 3}
+    - target: {fileID: 7380252534808162247, guid: 92a1f6b349a0df740af4e1405764135c,
+        type: 3}
+      propertyPath: ZombiePrefab
+      value: 
+      objectReference: {fileID: 262345729595618303, guid: 4ae899cb6c8d73a40bad0d75607c1e11,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92a1f6b349a0df740af4e1405764135c, type: 3}
 --- !u!1 &890323211
@@ -504,7 +560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPrefab: {fileID: 548, guid: b8f2de2e1e91e1c4cac9d4e1073713f3, type: 3}
-  PlayerPrefab2: {fileID: 792768961306562735, guid: 9f621f2f525a0514f95fb67a8f0285ea,
+  PlayerPrefab2: {fileID: 2804358264597077536, guid: 474db34b192553b49afa2bfd950940fe,
     type: 3}
   LocalPlayer: {fileID: 0}
   UpDatedForPlayer2: 0
@@ -659,6 +715,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2260423328407294187, guid: d2f2b00112fc84446ba53bda3f092bb3,
+        type: 3}
+      propertyPath: Zombie
+      value: 
+      objectReference: {fileID: 2677904035674569506, guid: 4ae899cb6c8d73a40bad0d75607c1e11,
+        type: 3}
+    - target: {fileID: 2260423328407294187, guid: d2f2b00112fc84446ba53bda3f092bb3,
+        type: 3}
+      propertyPath: ZombiePrefab
+      value: 
+      objectReference: {fileID: 262345729595618303, guid: 4ae899cb6c8d73a40bad0d75607c1e11,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f2b00112fc84446ba53bda3f092bb3, type: 3}
 --- !u!1001 &3543330569289922511
