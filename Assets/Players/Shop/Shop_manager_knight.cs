@@ -30,6 +30,9 @@ public class Shop_manager_knight : MonoBehaviourPun
         SBCost = 50;
         HPCost = 500;
         shopping = false;
+        player = GameObject.FindGameObjectWithTag("ArcherPlayer");
+        PlayerHealth = player.GetComponent<Health>();
+        PlayerSB = player.GetComponent<ShielBash_circle>();
     }
 
     // Update is called once per frame
@@ -40,10 +43,11 @@ public class Shop_manager_knight : MonoBehaviourPun
 
         if (Input.GetKeyDown(KeyCode.M) && !shopping)
         {
-            shopping = true;
+            Debug.Log("in the loop");
             player = GameObject.FindGameObjectWithTag("ArcherPlayer");
             PlayerHealth = player.GetComponent<Health>();
             PlayerSB = player.GetComponent<ShielBash_circle>();
+            shopping = true;
             ShopUI = Instantiate(ShopPrefab); //creation of the Shop Ui and display 
             SBDescription = GameObject.FindGameObjectWithTag("SBDescription");
             HPDescription = GameObject.FindGameObjectWithTag("HPDescription");
@@ -57,7 +61,7 @@ public class Shop_manager_knight : MonoBehaviourPun
             HPCostText.text = "" + HPCost; //display of the correct price for HP upgrade
             Money2display = GameObject.FindGameObjectWithTag("Money").GetComponent<Text>();
             Money2display.text = "" + money; //display of current balance
-            player.SetActive(false); //deactivate the player so that it can no longer move
+            //player.SetActive(false); //deactivate the player so that it can no longer move
         }
 
         if (shopping)
