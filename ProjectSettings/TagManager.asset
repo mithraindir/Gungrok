@@ -22,6 +22,9 @@ TagManager:
   - SBDescription
   - SBbutton
   - HPbutton
+  - ShopKnight
+  - SBTimer
+  - HP
   layers:
   - Default
   - TransparentFX
