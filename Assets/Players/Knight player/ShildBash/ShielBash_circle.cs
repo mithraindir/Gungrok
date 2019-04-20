@@ -57,7 +57,6 @@ public class ShielBash_circle : MonoBehaviourPun
         //cooldown loop
         if (!effect && timer < timerRef)
             timer += Time.fixedDeltaTime;
-
         shildBashSlider.value = (timer / timerRef);
     }
 }

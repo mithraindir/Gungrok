@@ -16,9 +16,11 @@ public class Shop_manager_knight : MonoBehaviourPun
     bool shopping; //to know if the shop panel/UI is activated/instantiated
     Button SBupgrade; //the button to upgrade the SB
     Text SBCostText;
+    Text CurrentSBTimer;
     int SBCost; //the cost of the upgrade shown on the button
     Button HPupgrade; //the button to upgrade the HP
     Text HPCostText;
+    Text CurrentHP;
     int HPCost; //the cost of the upgrade shown on the button
     Text Money2display; //the balnce shown in text form
     GameObject SBDescription; //the description of the SB upgrade
@@ -54,8 +56,12 @@ public class Shop_manager_knight : MonoBehaviourPun
             HPupgrade.onClick.AddListener(HPButtonClick);
             SBCostText = GameObject.FindGameObjectWithTag("SBPrice").GetComponent<Text>();
             SBCostText.text = "" + SBCost; //display of the correct price for SB upgrade
+            CurrentSBTimer = GameObject.FindGameObjectWithTag("SBTimer").GetComponent<Text>();
+            CurrentSBTimer.text = PlayerSB.timerRef + " seconds"; //update the current cooldown display
             HPCostText = GameObject.FindGameObjectWithTag("HPPrice").GetComponent<Text>();
             HPCostText.text = "" + HPCost; //display of the correct price for HP upgrade
+            CurrentHP = GameObject.FindGameObjectWithTag("HP").GetComponent<Text>();
+            CurrentHP.text = PlayerHealth.lifeRef + " HP";
             Money2display = GameObject.FindGameObjectWithTag("Money").GetComponent<Text>();
             Money2display.text = "" + money; //display of current balance
             player.SetActive(false); //deactivate the player so that it can no longer move
@@ -67,7 +73,7 @@ public class Shop_manager_knight : MonoBehaviourPun
                 //cheat to gain money
                 if (Input.GetKeyDown(KeyCode.Alpha3))
                 {
-                    money += 100;
+                    money += 100000;
                     Money2display.text = "" + money;
                 }
 
@@ -79,6 +85,12 @@ public class Shop_manager_knight : MonoBehaviourPun
                     Destroy(ShopUI);
                     player.SetActive(true); //reactivate the player
                 }
+
+                if (PlayerSB.timerRef == 2)
+                {
+                    SBupgrade.interactable = false;
+                    SBCostText.text = "NO MORE UPGRADES";
+                }
             }
         }
         
@@ -88,13 +100,16 @@ public class Shop_manager_knight : MonoBehaviourPun
     void SBButtonClick() //called when SB Button is clicked
     {
         if (SBCost > money)
+        {
             return;
+        }
         money -= SBCost; //remove the correct amount of money from the player's balance
         SBCost += 100; //raise of the upgrade cost
         Money2display.text = "" + money;
         SBCostText.text = "" + SBCost;
         PlayerSB.timerRef -= 2; //reduction of the shildBash cooldown
         PlayerSB.timer = PlayerSB.timerRef;
+        CurrentSBTimer.text = PlayerSB.timerRef + " seconds";
     }
 
     void SBButtonMouseOver() //called when the mouse is over the SB Button
@@ -117,6 +132,7 @@ public class Shop_manager_knight : MonoBehaviourPun
         HPCostText.text = "" + HPCost;
         PlayerHealth.lifeRef += 1;
         PlayerHealth.upgrade = true;
+        CurrentHP.text = PlayerHealth.lifeRef + " HP";
     }
 
     void HPButtonMouseOver() //called when the mouse is over the HP Button
