@@ -51,7 +51,7 @@ public class Health : MonoBehaviourPun
     {
         if (upgrade)
         {
-            lifeRef = life;
+            life = lifeRef;
             HealthSlider.maxValue = lifeRef;
             upgrade = false;
         }
