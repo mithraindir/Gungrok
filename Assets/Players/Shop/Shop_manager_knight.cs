@@ -30,9 +30,7 @@ public class Shop_manager_knight : MonoBehaviourPun
         SBCost = 50;
         HPCost = 500;
         shopping = false;
-        player = GameObject.FindGameObjectWithTag("ArcherPlayer");
-        PlayerHealth = player.GetComponent<Health>();
-        PlayerSB = player.GetComponent<ShielBash_circle>();
+        
     }
 
     // Update is called once per frame
@@ -43,10 +41,10 @@ public class Shop_manager_knight : MonoBehaviourPun
 
         if (Input.GetKeyDown(KeyCode.M) && !shopping)
         {
-            Debug.Log("in the loop");
             player = GameObject.FindGameObjectWithTag("ArcherPlayer");
             PlayerHealth = player.GetComponent<Health>();
             PlayerSB = player.GetComponent<ShielBash_circle>();
+            Debug.Log("in the loop");
             shopping = true;
             ShopUI = Instantiate(ShopPrefab); //creation of the Shop Ui and display 
             SBDescription = GameObject.FindGameObjectWithTag("SBDescription");
@@ -61,28 +59,32 @@ public class Shop_manager_knight : MonoBehaviourPun
             HPCostText.text = "" + HPCost; //display of the correct price for HP upgrade
             Money2display = GameObject.FindGameObjectWithTag("Money").GetComponent<Text>();
             Money2display.text = "" + money; //display of current balance
-            //player.SetActive(false); //deactivate the player so that it can no longer move
+            player.SetActive(false); //deactivate the player so that it can no longer move
         }
-
-        if (shopping)
+        else
         {
-            //cheat to gain money
-            if (Input.GetKeyDown(KeyCode.Alpha3))
+            if (shopping)
             {
-                Debug.Log("into cheat");
-                money += 100;
-                Money2display.text = "" + money;
-            }
+                //cheat to gain money
+                if (Input.GetKeyDown(KeyCode.Alpha3))
+                {
+                    Debug.Log("into cheat");
+                    money += 100;
+                    Money2display.text = "" + money;
+                }
 
-            if (Input.GetKeyDown(KeyCode.M))
-            {
-                shopping = false;
-                SBupgrade.onClick.RemoveListener(SBButtonClick);
-                HPupgrade.onClick.RemoveListener(SBButtonClick);
-                Destroy(ShopUI);
-                player.SetActive(true); //reactivate the player
+                if (Input.GetKeyDown(KeyCode.M))
+                {
+                    shopping = false;
+                    SBupgrade.onClick.RemoveListener(SBButtonClick);
+                    HPupgrade.onClick.RemoveListener(SBButtonClick);
+                    Destroy(ShopUI);
+                    player.SetActive(true); //reactivate the player
+                }
             }
         }
+        
+
     }
 
     void SBButtonClick() //called when SB Button is clicked
