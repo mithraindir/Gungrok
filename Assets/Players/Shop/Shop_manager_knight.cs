@@ -44,7 +44,6 @@ public class Shop_manager_knight : MonoBehaviourPun
             player = GameObject.FindGameObjectWithTag("ArcherPlayer");
             PlayerHealth = player.GetComponent<Health>();
             PlayerSB = player.GetComponent<ShielBash_circle>();
-            Debug.Log("in the loop");
             shopping = true;
             ShopUI = Instantiate(ShopPrefab); //creation of the Shop Ui and display 
             SBDescription = GameObject.FindGameObjectWithTag("SBDescription");
@@ -68,7 +67,6 @@ public class Shop_manager_knight : MonoBehaviourPun
                 //cheat to gain money
                 if (Input.GetKeyDown(KeyCode.Alpha3))
                 {
-                    Debug.Log("into cheat");
                     money += 100;
                     Money2display.text = "" + money;
                 }
