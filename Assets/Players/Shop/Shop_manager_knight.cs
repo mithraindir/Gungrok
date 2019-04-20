@@ -94,6 +94,7 @@ public class Shop_manager_knight : MonoBehaviourPun
         Money2display.text = "" + money;
         SBCostText.text = "" + SBCost;
         PlayerSB.timerRef -= 2; //reduction of the shildBash cooldown
+        PlayerSB.timer = PlayerSB.timerRef;
     }
 
     void SBButtonMouseOver() //called when the mouse is over the SB Button

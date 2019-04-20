@@ -14,7 +14,7 @@ public class ShielBash_circle : MonoBehaviourPun
     public float timerRef; //durée du cooldown
     public float effectTimeRef; //durée de shild bash (effet)
     float effectTime = 0;
-    float timer = 0f;
+    public float timer = 0f;
     bool effect = false;
 
     private void Start()
