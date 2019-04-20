@@ -37,7 +37,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 640, y: 482}
+  m_SizeDelta: {x: 1312.8, y: 522.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3141571234239069688
 CanvasRenderer:
@@ -427,7 +427,7 @@ RectTransform:
   m_GameObject: {fileID: 2618173200874734085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.46822, y: 0.57734996, z: 1}
+  m_LocalScale: {x: 0.4682178, y: 0.57734996, z: 1}
   m_Children:
   - {fileID: 8492112395929628952}
   - {fileID: 5414203939468712005}
@@ -437,8 +437,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 139, y: -30}
-  m_SizeDelta: {x: -90.400024, y: -50.799988}
+  m_AnchoredPosition: {x: 294, y: -24}
+  m_SizeDelta: {x: -406.3, y: 23.449999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5235808140759529209
 CanvasRenderer:
@@ -741,7 +741,7 @@ RectTransform:
   m_GameObject: {fileID: 3632565266184155011}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.8}
+  m_LocalScale: {x: 0.86724454, y: 1.00303, z: 0.8}
   m_Children:
   - {fileID: 7483889079376991271}
   m_Father: {fileID: 8801030079486553185}
@@ -749,7 +749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 236, y: 192}
+  m_AnchoredPosition: {x: 521, y: 198}
   m_SizeDelta: {x: 160, y: 45.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5785687069981009409
@@ -1118,8 +1118,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -139.1, y: -30}
-  m_SizeDelta: {x: -90.4, y: -50.8}
+  m_AnchoredPosition: {x: -293, y: -24}
+  m_SizeDelta: {x: -406.3, y: 23.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &418014654524698704
 CanvasRenderer:

@@ -214,6 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09246664b55c64e46ada8f55902ac7ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifeRef: 0
   life: 3
   upgrade: 0
 --- !u!114 &621

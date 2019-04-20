@@ -7,7 +7,7 @@ using Photon.Pun;
 public class Health : MonoBehaviourPun
 {
     Slider HealthSlider;
-    int lifeRef;
+    public int lifeRef;
     public int life;
     public bool upgrade;
     GameObject objet;

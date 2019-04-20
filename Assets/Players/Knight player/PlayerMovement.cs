@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviourPun
     public Vector3 offset;
 
     protected Rigidbody player;
-    Vector3 veloSave;
+    Vector3 veloSave = new Vector3(1,0,0);
 
 
     // Start is called before the first frame update
