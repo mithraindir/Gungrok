@@ -9,6 +9,7 @@ public class Health : MonoBehaviourPun
     Slider HealthSlider;
     int lifeRef;
     public int life;
+    public bool upgrade;
     GameObject objet;
     GameObject otherPlayer;
 
@@ -16,6 +17,8 @@ public class Health : MonoBehaviourPun
     {
         lifeRef = life;
         HealthSlider = GameObject.FindGameObjectWithTag("healthSlider").GetComponent<Slider>();
+        HealthSlider.maxValue = lifeRef;
+        upgrade = false;
     }
 
     private void OnCollisionEnter(Collision other)
@@ -46,13 +49,20 @@ public class Health : MonoBehaviourPun
 
     private void FixedUpdate()
     {
+        if (upgrade)
+        {
+            lifeRef = life;
+            HealthSlider.maxValue = lifeRef;
+            upgrade = false;
+        }
+
         HealthSlider.value = life;
 
         if (life <= 0)
         {
             Debug.Log("DEATH");
         }
-
+        
         //cheat to regain life
         if (Input.GetKeyDown(KeyCode.Alpha1))
             life = lifeRef;

@@ -15,6 +15,13 @@ TagManager:
   - shildBashSlider
   - healthSlider
   - ennemyProjectile
+  - HPDescription
+  - SBPrice
+  - Money
+  - HPPrice
+  - SBDescription
+  - SBbutton
+  - HPbutton
   layers:
   - Default
   - TransparentFX

@@ -215,6 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+  upgrade: 0
 --- !u!114 &621
 MonoBehaviour:
   m_ObjectHideFlags: 0
