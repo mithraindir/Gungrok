@@ -38,7 +38,7 @@ public class Shop_manager_knight : MonoBehaviourPun
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (PhotonNetwork.LocalPlayer.NickName != "Player 1") //for test purposes on not (!) to be removed
+        if (PhotonNetwork.LocalPlayer.NickName != "Player 1") //ATTENTION for test purposes on not (!) to be removed to work for knight only
             return;
 
         if (Input.GetKeyDown(KeyCode.M) && !shopping)

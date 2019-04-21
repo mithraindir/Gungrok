@@ -25,6 +25,7 @@ TagManager:
   - ShopKnight
   - SBTimer
   - HP
+  - CommonHP
   layers:
   - Default
   - TransparentFX

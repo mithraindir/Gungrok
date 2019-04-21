@@ -7,6 +7,7 @@ using Photon.Pun;
 public class Health : MonoBehaviourPun
 {
     Slider HealthSlider;
+    public PhotonView gameView;
     public int lifeRef;
     public int life;
     public bool upgrade;
@@ -15,6 +16,7 @@ public class Health : MonoBehaviourPun
 
     private void Start()
     {
+        gameView = PhotonView.Get(this);
         lifeRef = life;
         HealthSlider = GameObject.FindGameObjectWithTag("healthSlider").GetComponent<Slider>();
         HealthSlider.maxValue = lifeRef;
@@ -25,14 +27,6 @@ public class Health : MonoBehaviourPun
     {
         if (!photonView.IsMine)
             return;
-        if (PhotonNetwork.LocalPlayer.NickName != "Player 1")
-        {
-            otherPlayer = GameObject.FindGameObjectWithTag("ArcherPlayer");
-        }
-        else
-        {
-            otherPlayer = GameObject.FindGameObjectWithTag("KnightPlayer");
-        }
         if (other.gameObject.GetComponent<Rigidbody>() != null)
         {
             objet = other.gameObject;
@@ -40,31 +34,53 @@ public class Health : MonoBehaviourPun
             {
                 if (other.contacts[0].thisCollider.gameObject.tag != "shield") //check if first point of contact is shild and if not remove health
                 {
-                    life -= 1;
-                    otherPlayer.GetComponent<Health>().life -= 1; //normalent doit retirer de la vie à l'autre joueur
+                    gameView.RPC("HealthReduction", RpcTarget.AllBufferedViaServer, null);
                 }
             }
         }
     }
 
+    [PunRPC]
+    public void HealthReduction()
+    {
+        life--;
+    }
+
+    [PunRPC]
+    public void changeHealthRef(int c)
+    {
+        lifeRef = c;
+    }
+
+    [PunRPC]
+    public void changeHealth()
+    {
+        life = lifeRef;
+    }
+
     private void FixedUpdate()
     {
+        if (!photonView.IsMine) //if removed knight health sync to archer
+            return;
         if (upgrade)
         {
-            life = lifeRef;
+            gameView.RPC("changeHealthRef", RpcTarget.Others,lifeRef);
+            gameView.RPC("changeHealth", RpcTarget.AllBufferedViaServer, null);
             HealthSlider.maxValue = lifeRef;
             upgrade = false;
         }
-
-        HealthSlider.value = life;
 
         if (life <= 0)
         {
             Debug.Log("DEATH");
         }
-        
+
         //cheat to regain life
         if (Input.GetKeyDown(KeyCode.Alpha1))
-            life = lifeRef;
+        {
+            gameView.RPC("changeHealth", RpcTarget.AllViaServer, null);
+        }
+
+        HealthSlider.value = life;
     }
 }

@@ -17,7 +17,7 @@ public class shieldController : MonoBehaviourPun
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!photonView.IsMine)
+        if (!photonView.IsMine || PhotonNetwork.LocalPlayer.NickName == "Player 1")
             return;
         if ((Input.GetAxisRaw("PrimaryX") != 0 || Input.GetAxisRaw("PrimaryZ") != 0))
         {
