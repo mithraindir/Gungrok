@@ -209,6 +209,7 @@ GameObject:
   - component: {fileID: 8595885014520484407}
   - component: {fileID: 1430504165616897330}
   - component: {fileID: 4093476079772611681}
+  - component: {fileID: 5497245161316299385}
   m_Layer: 0
   m_Name: TriggerEnter(droit)
   m_TagString: Untagged
@@ -301,6 +302,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 7411201537048631584}
+--- !u!114 &5497245161316299385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678408625314865953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0c6bf96bd267c548b022660d9dc6870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: {fileID: 5170879164831871318, guid: 147345d008625fb4badb60a9b8e92cd0, type: 3}
 --- !u!1 &2323664904818821154
 GameObject:
   m_ObjectHideFlags: 0

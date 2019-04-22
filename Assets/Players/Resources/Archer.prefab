@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameView: {fileID: 0}
-  lifeRef: 0
+  lifeRef: 3
   life: 3
   upgrade: 0
 --- !u!114 &614

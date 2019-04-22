@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Common_Health : MonoBehaviour
 {
-    public int Health;
+    public float Health;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +14,6 @@ public class Common_Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       Health = this.transform.position.x;
     }
 }

@@ -26,6 +26,7 @@ TagManager:
   - SBTimer
   - HP
   - CommonHP
+  - HPsync
   layers:
   - Default
   - TransparentFX
