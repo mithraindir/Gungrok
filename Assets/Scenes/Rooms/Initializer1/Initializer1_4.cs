@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class Initializer1_2 : MonoBehaviourPun
+public class Initializer1_4 : MonoBehaviourPun
 {
     static bool HasSpawned = false;
 
@@ -14,9 +14,10 @@ public class Initializer1_2 : MonoBehaviourPun
 
             if (collision.gameObject.tag == "ArcherPlayer")
             {
-                MobSpawner.Spawn("Zombie", 224, 0, 17);
-                MobSpawner.Spawn("Zombie", 237, 0, 4);
-                MobSpawner.Spawn("Zombie", 224, 0, -10);
+                
+                MobSpawner.Spawn("Wizzard", 390, 0, -80);
+                MobSpawner.Spawn("Wizzard", 395, 0, -87);
+                MobSpawner.Spawn("Wizzard", 390, 0, -100);
                 HasSpawned = true;
             }
 
