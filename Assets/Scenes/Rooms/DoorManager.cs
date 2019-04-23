@@ -26,8 +26,8 @@ public class DoorManager : MonoBehaviour
                 Door1.GetComponent<MeshRenderer>().enabled = true;
                 Door2.GetComponent<MeshRenderer>().enabled = true;
 
-                Door1.GetComponent<BoxCollider>().enabled = true;
-                Door2.GetComponent<BoxCollider>().enabled = true;
+                Door1.GetComponent<MeshCollider>().enabled = true;
+                Door2.GetComponent<MeshCollider>().enabled = true;
                 IsClosed = true;
                 
             }
@@ -47,8 +47,8 @@ public class DoorManager : MonoBehaviour
                 Door1.GetComponent<MeshRenderer>().enabled = false;
                 Door2.GetComponent<MeshRenderer>().enabled = false;
 
-                Door1.GetComponent<BoxCollider>().enabled = false;
-                Door2.GetComponent<BoxCollider>().enabled = false;
+                Door1.GetComponent<MeshCollider>().enabled = false;
+                Door2.GetComponent<MeshCollider>().enabled = false;
 
 
             }
