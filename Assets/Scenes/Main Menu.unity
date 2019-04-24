@@ -208,24 +208,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1378446976}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &991473371 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 236067424, guid: 02d7edfbcd0501e4489d63c2b00c409c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1378446976}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &991473373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991473371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c97d890f3114a174b86352c1d6bcda85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1101363078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -617,11 +599,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 991473373}
+      objectReference: {fileID: 363504108}
     - target: {fileID: 5065273882955715272, guid: 02d7edfbcd0501e4489d63c2b00c409c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 720923309, guid: 02d7edfbcd0501e4489d63c2b00c409c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
