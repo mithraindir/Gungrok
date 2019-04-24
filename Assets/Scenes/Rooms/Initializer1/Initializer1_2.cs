@@ -15,9 +15,9 @@ public class Initializer1_2 : MonoBehaviourPun
             if (collision.gameObject.tag == "ArcherPlayer")
             {
                 
-                MobSpawner.Spawn("Zombie", 283, 0, 5);
-                MobSpawner.Spawn("Zombie", 283, 0, -9);
-                MobSpawner.Spawn("Zombie", 270, 0, -9);
+                MobSpawner.Spawn("Zombie", 235, 0, 10);
+                MobSpawner.Spawn("Zombie", 245, 0, 0);
+                MobSpawner.Spawn("Zombie", 235, 0, -10);
                 HasSpawned = true;
             }
 
