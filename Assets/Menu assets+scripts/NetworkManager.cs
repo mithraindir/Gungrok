@@ -69,6 +69,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         base.OnJoinedRoom();
         TriesToConnectToRoom = false;
+        SceneManager.LoadScene(1);
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
