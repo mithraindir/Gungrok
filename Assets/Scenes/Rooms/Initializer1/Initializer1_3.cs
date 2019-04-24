@@ -12,7 +12,7 @@ public class Initializer1_3 : MonoBehaviourPun
         if (!HasSpawned)
         {
 
-            if (collision.gameObject.tag == "ArcherPlayer")
+            if (collision.gameObject.tag == "ArcherPlayer" || collision.gameObject.tag == "KnightPlayer")
             {
                 
                 MobSpawner.Spawn("Wizzard", 356, 0, 0);

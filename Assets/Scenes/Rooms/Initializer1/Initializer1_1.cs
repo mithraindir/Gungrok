@@ -12,7 +12,7 @@ public class Initializer1_1 : MonoBehaviourPun
         if (!HasSpawned)
         {
             
-            if (collision.gameObject.tag == "ArcherPlayer")
+            if (collision.gameObject.tag == "ArcherPlayer" || collision.gameObject.tag == "KnightPlayer")
             {
                 
                 MobSpawner.Spawn("Zombie", 125, 0, 0);

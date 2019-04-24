@@ -20,7 +20,7 @@ public class DoorManager : MonoBehaviour
                 //tp le guerrier sur l'archer
                 if (GameObject.FindGameObjectWithTag("KnightPlayer"))
                 {
-                    GameObject.FindGameObjectWithTag("KnightPlayer").transform.position = collision.gameObject.transform.position;
+                    GameObject.FindGameObjectWithTag("KnightPlayer").transform.position = this.gameObject.transform.position;
                 }
 
                 Door1.GetComponent<MeshRenderer>().enabled = true;
@@ -29,11 +29,29 @@ public class DoorManager : MonoBehaviour
                 Door1.GetComponent<MeshCollider>().enabled = true;
                 Door2.GetComponent<MeshCollider>().enabled = true;
                 IsClosed = true;
-                
+
+            }
+            else
+            {
+                if (collision.gameObject.tag == "KnightPlayer")
+                {
+                    //tp le guerrier sur l'archer
+                    if (GameObject.FindGameObjectWithTag("ArcherPlayer"))
+                    {
+                        GameObject.FindGameObjectWithTag("ArcherPlayer").transform.position = this.gameObject.transform.position;
+                    }
+
+                    Door1.GetComponent<MeshRenderer>().enabled = true;
+                    Door2.GetComponent<MeshRenderer>().enabled = true;
+
+                    Door1.GetComponent<MeshCollider>().enabled = true;
+                    Door2.GetComponent<MeshCollider>().enabled = true;
+                    IsClosed = true;
+
+                }
             }
 
-            
-            
+
         }
     }
 
