@@ -29,6 +29,11 @@ namespace Photon.Pun
 
         private static HashSet<byte> blockedSendingGroups = new HashSet<byte>();
 
+        public static void ConnectUsingSettings(string v)
+        {
+            throw new NotImplementedException();
+        }
+
 
         /// <summary>
         /// The photon view list.
