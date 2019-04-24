@@ -30,6 +30,12 @@ TagManager:
   - DashButton
   - DashDescription
   - DashPrice
+  - DashTimer
+  - ShootButton
+  - ShootDescription
+  - ShootPrice
+  - ShootTimer
+  - ReloadTime
   layers:
   - Default
   - TransparentFX
