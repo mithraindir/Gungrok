@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthPoint: 3
+  money: 10
 --- !u!54 &5356382776801162637
 Rigidbody:
   m_ObjectHideFlags: 0

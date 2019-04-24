@@ -36,5 +36,6 @@ MonoBehaviour:
   - changeHealth
   - changeHealthRef
   - Upgrade
+  - Money
   DisableAutoOpenWizard: 1
   ShowSettings: 0

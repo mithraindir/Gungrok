@@ -12,8 +12,6 @@ public class MobHealth : MonoBehaviourPun
 
     private void Start()
     {
-        ShopArcher = GameObject.FindGameObjectWithTag("ShopKnight").GetComponent<Shop_manager_archer>();
-        ShopKnight = GameObject.FindGameObjectWithTag("ShopKnight").GetComponent<Shop_manager_knight>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -23,10 +21,22 @@ public class MobHealth : MonoBehaviourPun
 
         if (HealthPoint == 0)
         {
+            photonView.RPC("Money", RpcTarget.All, null);
+            /*ShopArcher = GameObject.FindGameObjectWithTag("ShopKnight").GetComponent<Shop_manager_archer>();
+            ShopKnight = GameObject.FindGameObjectWithTag("ShopKnight").GetComponent<Shop_manager_knight>();
             ShopArcher.money += money;
-            ShopKnight.money += money;
+            ShopKnight.money += money;*/
             MonsterList.DeleteMonster(this.gameObject);
             PhotonNetwork.Destroy(this.gameObject);
         }
+    }
+
+    [PunRPC]
+    public void Money()
+    {
+        ShopArcher = GameObject.FindGameObjectWithTag("ShopKnight").GetComponent<Shop_manager_archer>();
+        ShopKnight = GameObject.FindGameObjectWithTag("ShopKnight").GetComponent<Shop_manager_knight>();
+        ShopArcher.money += money;
+        ShopKnight.money += money;
     }
 }
