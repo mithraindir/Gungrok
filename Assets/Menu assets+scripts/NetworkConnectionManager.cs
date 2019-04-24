@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using Photon.Realtime;
 using UnityEngine.SceneManagement;
 
-public class NetwordManager : MonoBehaviourPunCallbacks
+public class NetworkConnectionManager : MonoBehaviourPunCallbacks
 {
 
     public Button BtnConnectMaster;
@@ -33,10 +33,10 @@ public class NetwordManager : MonoBehaviourPunCallbacks
 
     public void OnClickConnectToMaster()
     {
-
+ 
         TriesToConnectToMaster = true;
         PhotonNetwork.ConnectUsingSettings();
-
+        
     }
 
 
@@ -46,7 +46,7 @@ public class NetwordManager : MonoBehaviourPunCallbacks
         TriesToConnectToMaster = false;
         TriesToConnectToRoom = false;
         Debug.Log(cause);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Menu");
     }
 
     public override void OnConnectedToMaster()
@@ -94,11 +94,6 @@ public class NetwordManager : MonoBehaviourPunCallbacks
         Debug.Log(message);
         base.OnCreateRoomFailed(returnCode, message);
         TriesToConnectToRoom = false;
-    }
-
-    public void LoadByIndex(int sceneIndex)
-    {
-        SceneManager.LoadScene(sceneIndex);
     }
 
 }
