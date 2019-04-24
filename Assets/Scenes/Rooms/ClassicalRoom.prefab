@@ -2005,7 +2005,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2039565399041525793}
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24680802, y: -0.5285401, z: -0.5266652}
+  m_LocalPosition: {x: -0.24680802, y: -0.5285401, z: -0.5253}
   m_LocalScale: {x: 0.0840299, y: 0.2049997, z: 0.057715703}
   m_Children: []
   m_Father: {fileID: 6883259128692326554}
@@ -7804,7 +7804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8219476389410027677}
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.24868102, y: -0.52546, z: -0.5266652}
+  m_LocalPosition: {x: 0.24868102, y: -0.52546, z: -0.5262}
   m_LocalScale: {x: 0.083068244, y: 0.2049997, z: 0.057715703}
   m_Children: []
   m_Father: {fileID: 6883259128692326554}
@@ -8535,6 +8535,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
+    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+      propertyPath: m_Name
+      value: Porte/mur gauche
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7890015
@@ -8591,10 +8595,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.63268405
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
-      propertyPath: m_Name
-      value: Porte/mur gauche
-      objectReference: {fileID: 0}
     - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -8624,6 +8624,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
+    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+      propertyPath: m_Name
+      value: Porte/mur droit
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.792
@@ -8680,10 +8684,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.649576
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
-      propertyPath: m_Name
-      value: Porte/mur droit
-      objectReference: {fileID: 0}
     - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -8713,6 +8713,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
+    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+      propertyPath: m_Name
+      value: Porte/mur haut
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.798
@@ -8769,10 +8773,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.6810243
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
-      propertyPath: m_Name
-      value: Porte/mur haut
-      objectReference: {fileID: 0}
     - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -8796,6 +8796,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
+    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+      propertyPath: m_Name
+      value: Porte/mur bas
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.801
@@ -8851,10 +8855,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.6810251
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
-      propertyPath: m_Name
-      value: Porte/mur bas
       objectReference: {fileID: 0}
     - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
