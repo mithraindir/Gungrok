@@ -7,6 +7,6 @@ public class LoadScene : MonoBehaviour
 {
     public void LoadRoomSelection()
     {
-        SceneManager.LoadScene("Room Selection");
+        SceneManager.LoadScene("Niveau test");
     }
 }
