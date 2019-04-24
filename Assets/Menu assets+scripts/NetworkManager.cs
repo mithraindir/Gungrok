@@ -95,9 +95,4 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             PhotonNetwork.LocalPlayer.NickName = "Player 2";
     }
 
-    public void LoadRoom(string RoomName)
-    {
-        SceneManager.LoadScene(RoomName);
-    }
-
 }
