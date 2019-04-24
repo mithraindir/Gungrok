@@ -7,14 +7,17 @@ using UnityEngine.UI;
 public class Dash : MonoBehaviourPun
 {
     Slider DashSlider;  //le slider du cooldown du shield bash
+    PlayerMovement PMov;
     public float timerRef; //durée du cooldown
     public float effectTimeRef; //durée de shild bash (effet)
     float effectTime = 0;
+    public float speed = 50;
     public float timer = 0f;
     bool effect = false;
 
     private void Start()
     {
+        PMov = this.GetComponent<PlayerMovement>();
         DashSlider = GameObject.FindGameObjectWithTag("shildBashSlider").GetComponent<Slider>();
         timer = timerRef;
     }
@@ -27,8 +30,10 @@ public class Dash : MonoBehaviourPun
 
         if (Input.GetKeyDown("space") && timer >= timerRef)
         {
+            this.GetComponent<Rigidbody>().velocity = speed * transform.forward.normalized;
             effectTime = 0; //réinitialise le temps d'effet
             timer = 0f;//réinitialise le cooldown
+            PMov.enabled = false;
             effect = true;
         }
 
@@ -43,6 +48,8 @@ public class Dash : MonoBehaviourPun
             if (effectTime >= effectTimeRef)
             {
                 effectTime = 0;
+                this.GetComponent<Rigidbody>().velocity = new Vector3 (0,0,0);
+                PMov.enabled = true;
                 effect = false;
             }
         }
