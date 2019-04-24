@@ -55,7 +55,11 @@ public class PlayerMovement : MonoBehaviourPun
 
     public static void RefreshInstance(ref PlayerMovement player, PlayerMovement Prefab, PlayerMovement Prefab2)
     {
-        var position = new Vector3(41.2f,0.29f, 6.680687f);
+        var position = new Vector3(0, 0, 0);
+        if (PhotonNetwork.LocalPlayer.NickName == "Player 1")
+            position = new Vector3(-0.79f, 0f, -3.83f);
+        else
+            position = new Vector3(-0.79f, 0f, 3.41f);
         var rotation = Quaternion.identity;
         if (player != null)
         {
