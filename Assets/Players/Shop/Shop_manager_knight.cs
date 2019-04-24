@@ -29,6 +29,7 @@ public class Shop_manager_knight : MonoBehaviourPun
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
         SBCost = 50;
         HPCost = 500;
         shopping = false;

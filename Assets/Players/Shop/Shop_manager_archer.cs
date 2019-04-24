@@ -29,6 +29,7 @@ public class Shop_manager_archer : MonoBehaviourPun
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
         DashCost = 50;
         ArrowCost = 500;
         shopping = false;
