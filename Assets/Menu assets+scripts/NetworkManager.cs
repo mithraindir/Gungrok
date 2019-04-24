@@ -69,7 +69,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         base.OnJoinedRoom();
         TriesToConnectToRoom = false;
-        SceneManager.LoadScene("Niveau test");
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
@@ -94,6 +93,11 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             PhotonNetwork.LocalPlayer.NickName = "Player 1";
         else
             PhotonNetwork.LocalPlayer.NickName = "Player 2";
+    }
+
+    public void LoadRoom(string RoomName)
+    {
+        SceneManager.LoadScene(RoomName);
     }
 
 }

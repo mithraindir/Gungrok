@@ -5,15 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scene utiles/Main Menu.unity
     guid: 9a28cf0c678f7b9459cd79cd8df89bc4
-  - enabled: 1
-    path: Assets/Scene utiles/Room Selection.unity
-    guid: b714b915e211538448d279b83cc074fe
   - enabled: 1
     path: Assets/Scene utiles/Champ Select.unity
     guid: c1b31d5d8a09bf440930f3f9cbf0c81e
