@@ -32,5 +32,10 @@ MonoBehaviour:
   - DestroySpaceship
   - Fire
   - RespawnSpaceship
+  - HealthReduction
+  - changeHealth
+  - changeHealthRef
+  - Upgrade
+  - Money
   DisableAutoOpenWizard: 1
   ShowSettings: 0

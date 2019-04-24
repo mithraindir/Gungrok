@@ -15,6 +15,27 @@ TagManager:
   - shildBashSlider
   - healthSlider
   - ennemyProjectile
+  - HPDescription
+  - SBPrice
+  - Money
+  - HPPrice
+  - SBDescription
+  - SBbutton
+  - HPbutton
+  - ShopKnight
+  - SBTimer
+  - HP
+  - CommonHP
+  - HPsync
+  - DashButton
+  - DashDescription
+  - DashPrice
+  - DashTimer
+  - ShootButton
+  - ShootDescription
+  - ShootPrice
+  - ShootTimer
+  - ReloadTime
   layers:
   - Default
   - TransparentFX

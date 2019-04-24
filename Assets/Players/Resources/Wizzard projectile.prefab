@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3505142941836661946}
   - component: {fileID: 8394242691746167432}
   - component: {fileID: 9100784012778073454}
+  - component: {fileID: 271423085044547503}
   m_Layer: 0
   m_Name: Wizzard projectile
   m_TagString: ennemyProjectile
@@ -93,7 +94,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 708077401173783450}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -193,3 +194,17 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!64 &271423085044547503
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708077401173783450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}

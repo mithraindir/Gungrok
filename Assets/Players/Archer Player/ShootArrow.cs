@@ -13,8 +13,10 @@ public class ShootArrow : MonoBehaviourPun
     [Header("First Game Manager")]
     public ArrowMovement prefabArrow;
 
-
-
+    private void Start()
+    {
+        RT = ReloadTime;
+    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -22,7 +24,7 @@ public class ShootArrow : MonoBehaviourPun
         if (ArrowMovement.CreateArrow(ref Arrow, ref prefabArrow, ReloadTime, RT))
             RT = 0;
         else
-            RT += 1;
+            RT += Time.fixedDeltaTime;
         
     }
 
