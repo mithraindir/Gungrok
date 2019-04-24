@@ -19,8 +19,6 @@ public class ShielBash_circle : MonoBehaviourPun
 
     private void Start()
     {
-        if (!photonView.IsMine)
-            return;
         shildBashSlider = GameObject.FindGameObjectWithTag("shildBashSlider").GetComponent<Slider>();
         timer = timerRef;
     }

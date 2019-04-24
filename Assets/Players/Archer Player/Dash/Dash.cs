@@ -15,8 +15,6 @@ public class Dash : MonoBehaviourPun
 
     private void Start()
     {
-        if (!photonView.IsMine)
-            return;
         DashSlider = GameObject.FindGameObjectWithTag("shildBashSlider").GetComponent<Slider>();
         timer = timerRef;
     }
