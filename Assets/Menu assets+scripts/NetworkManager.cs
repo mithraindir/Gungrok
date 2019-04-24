@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using Photon.Realtime;
 using UnityEngine.SceneManagement;
 
-public class NetworkConnectionManager : MonoBehaviourPunCallbacks
+public class NetworkManager : MonoBehaviourPunCallbacks
 {
 
     public Button BtnConnectMaster;
@@ -25,18 +25,14 @@ public class NetworkConnectionManager : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        if (BtnConnectMaster != null)
-            BtnConnectMaster.gameObject.SetActive(!PhotonNetwork.IsConnected && !TriesToConnectToMaster);
-        if (BtnConnectRoom != null)
-            BtnConnectRoom.gameObject.SetActive(PhotonNetwork.IsConnected && !TriesToConnectToMaster && !TriesToConnectToRoom);
     }
 
     public void OnClickConnectToMaster()
     {
- 
         TriesToConnectToMaster = true;
         PhotonNetwork.ConnectUsingSettings();
-        
+        Debug.Log("ca marche le master");
+
     }
 
 
@@ -46,12 +42,13 @@ public class NetworkConnectionManager : MonoBehaviourPunCallbacks
         TriesToConnectToMaster = false;
         TriesToConnectToRoom = false;
         Debug.Log(cause);
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene(0);
     }
 
     public override void OnConnectedToMaster()
     {
-        PhotonNetwork.JoinLobby();
+        TypedLobby lobby = new TypedLobby("Lobby", LobbyType.Default);
+        PhotonNetwork.JoinLobby(lobby);
         Debug.Log("room disponible : " + PhotonNetwork.CountOfRooms);
         base.OnConnectedToMaster();
         TriesToConnectToMaster = false;
@@ -72,12 +69,6 @@ public class NetworkConnectionManager : MonoBehaviourPunCallbacks
     {
         base.OnJoinedRoom();
         TriesToConnectToRoom = false;
-        if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
-            PhotonNetwork.NickName = "Player 1";
-        else
-            PhotonNetwork.NickName = "Player 2";
-        Debug.Log("Master: " + PhotonNetwork.IsMasterClient + " | Players In Room: " + PhotonNetwork.CurrentRoom.PlayerCount + " | RoomName: " + PhotonNetwork.CurrentRoom.Name);
-        SceneManager.LoadScene("Niveau test");
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
@@ -94,6 +85,19 @@ public class NetworkConnectionManager : MonoBehaviourPunCallbacks
         Debug.Log(message);
         base.OnCreateRoomFailed(returnCode, message);
         TriesToConnectToRoom = false;
+    }
+
+    public void ChoseCharacter(int nb)
+    {
+        if (nb == 1)
+            PhotonNetwork.LocalPlayer.NickName = "Player 1";
+        else
+            PhotonNetwork.LocalPlayer.NickName = "Player 2";
+    }
+
+    public void LoadRoom(string RoomName)
+    {
+        SceneManager.LoadScene(RoomName);
     }
 
 }
