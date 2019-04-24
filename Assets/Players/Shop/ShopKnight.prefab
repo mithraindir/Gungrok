@@ -1230,7 +1230,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Reduce the cooldown of the shild bash ability by 2 sec '
+  m_Text: 'Reduce the cooldown of the shield bash ability by 2 sec '
 --- !u!1 &5325370754217745378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,7 +1309,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Shild bash \nUpgrade"
+  m_Text: "Shield bash \nUpgrade"
 --- !u!1 &5527132776143313508
 GameObject:
   m_ObjectHideFlags: 0

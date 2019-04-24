@@ -91,8 +91,8 @@ GameObject:
   - component: {fileID: 1903228343684502610}
   - component: {fileID: 7758674833425151831}
   m_Layer: 5
-  m_Name: HP
-  m_TagString: HP
+  m_Name: ReloadTime
+  m_TagString: ReloadTime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 492, y: 26.499958}
+  m_AnchoredPosition: {x: 533, y: 26.499958}
   m_SizeDelta: {x: 314.9, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1903228343684502610
@@ -158,7 +158,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3 HP
+  m_Text: 8 seconds
 --- !u!1 &661947701472483102
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,8 +193,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -317, y: 0}
-  m_SizeDelta: {x: 299.2, y: 53}
+  m_AnchoredPosition: {x: -344, y: 0}
+  m_SizeDelta: {x: 346.9, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5243236819776084410
 CanvasRenderer:
@@ -237,7 +237,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Current Hit Points:'
+  m_Text: 'Current Reload Time:'
 --- !u!1 &1152873769157199511
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 1573957988245768754}
   m_Layer: 5
   m_Name: Description
-  m_TagString: HPDescription
+  m_TagString: ShootDescription
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -316,7 +316,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Increase your total hitpoint by one
+  m_Text: decrease your arrow reload time by 5
 --- !u!1 &1156286776756774004
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,8 +487,8 @@ GameObject:
   - component: {fileID: 3235705030990928645}
   - component: {fileID: 5705431999096071680}
   m_Layer: 5
-  m_Name: LifeButton
-  m_TagString: HPbutton
+  m_Name: ShootButton
+  m_TagString: ShootButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 6287279974852529584}
   - component: {fileID: 8312798894936372043}
   m_Layer: 5
-  m_Name: Life Upgrade
+  m_Name: Shooting Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1126,7 +1126,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Life \nUpgrade"
+  m_Text: 'Reload
+
+    Upgrade'
 --- !u!1 &4054336996011276398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,7 +1281,7 @@ GameObject:
   - component: {fileID: 1386279090845531246}
   m_Layer: 5
   m_Name: Price
-  m_TagString: HPPrice
+  m_TagString: ShootPrice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1699,8 +1701,8 @@ GameObject:
   - component: {fileID: 3150652009478381478}
   - component: {fileID: 169148509304315963}
   m_Layer: 5
-  m_Name: SB Current timer
-  m_TagString: SBTimer
+  m_Name: Dash Current timer
+  m_TagString: DashTimer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

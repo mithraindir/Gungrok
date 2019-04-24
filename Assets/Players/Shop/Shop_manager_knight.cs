@@ -64,7 +64,10 @@ public class Shop_manager_knight : MonoBehaviourPun
             CurrentHP.text = PlayerHealth.lifeRef + " HP";
             Money2display = GameObject.FindGameObjectWithTag("Money").GetComponent<Text>();
             Money2display.text = "" + money; //display of current balance
-            player.SetActive(false); //deactivate the player so that it can no longer move
+            player.GetComponent<PlayerMovement>().enabled = false;
+            player.GetComponent<shieldController>().enabled = false;
+            PlayerSB.enabled = false;
+            //player.SetActive(false); //deactivate the player so that it can no longer move
         }
         else
         {
@@ -83,7 +86,10 @@ public class Shop_manager_knight : MonoBehaviourPun
                     SBupgrade.onClick.RemoveListener(SBButtonClick);
                     HPupgrade.onClick.RemoveListener(HPButtonClick);
                     Destroy(ShopUI);
-                    player.SetActive(true); //reactivate the player
+                    player.GetComponent<PlayerMovement>().enabled = true;
+                    player.GetComponent<shieldController>().enabled = true;
+                    PlayerSB.enabled = true;
+                    //player.SetActive(true); //reactivate the player
                 }
 
                 if (PlayerSB.timerRef == 2)

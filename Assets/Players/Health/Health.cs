@@ -35,9 +35,9 @@ public class Health : MonoBehaviourPun
             {
                 if (other.contacts[0].thisCollider.gameObject.tag != "shield") //check if first point of contact is shild and if not remove health
                 {
-                    commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
-                    commoneHP.transform.position -= new Vector3(1, 0, 0);
-                    //gameView.RPC("HealthReduction", RpcTarget.All, null);
+                    /*commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
+                    commoneHP.transform.position -= new Vector3(1, 0, 0);*/
+                    gameView.RPC("HealthReduction", RpcTarget.All, null);
                 }
             }
         }
@@ -68,10 +68,10 @@ public class Health : MonoBehaviourPun
 
         if (upgrade)
         {
-            //gameView.RPC("changeHealthRef", RpcTarget.All,lifeRef);
-            //gameView.RPC("changeHealth", RpcTarget.All, null);
-            commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
-            commoneHP.transform.position = new Vector3(lifeRef, 0, 0);
+            gameView.RPC("changeHealthRef", RpcTarget.All,lifeRef);
+            gameView.RPC("changeHealth", RpcTarget.All, null);
+            /*commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
+            commoneHP.transform.position = new Vector3(lifeRef, 0, 0);*/
             HealthSlider.maxValue = lifeRef;
             upgrade = false;
         }
@@ -84,13 +84,13 @@ public class Health : MonoBehaviourPun
         //cheat to regain life
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
-            commoneHP.transform.position = new Vector3(3, 0, 0);
-            //gameView.RPC("changeHealth", RpcTarget.All, null);
+            /*commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
+            commoneHP.transform.position = new Vector3(3, 0, 0);*/
+            gameView.RPC("changeHealth", RpcTarget.All, null);
         }
 
-        commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
-        life = commoneHP.GetComponent<Common_Health>().Health;
+        /*commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
+        life = commoneHP.GetComponent<Common_Health>().Health;*/
         HealthSlider.value = life;
     }
 }
