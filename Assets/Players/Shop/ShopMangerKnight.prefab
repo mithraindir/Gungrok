@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 843796690800386945}
   - component: {fileID: 6080677761369468008}
+  - component: {fileID: 4162982507782187024}
   m_Layer: 0
   m_Name: ShopMangerKnight
   m_TagString: ShopKnight
@@ -45,4 +46,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: 50
   ShopPrefab: {fileID: 9053001771886887415, guid: acb805f8a5ce4ac479a6c8b75b83a004,
+    type: 3}
+--- !u!114 &4162982507782187024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751049300324734235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0603c1dbc9b9a3844a31d458bbe7aeb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 50
+  ShopPrefab: {fileID: 4054336996011276398, guid: 8ff26c45aa597fd4c94ea986167b7a42,
     type: 3}

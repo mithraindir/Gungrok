@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 599}
   - component: {fileID: 548}
   - component: {fileID: 549}
-  - component: {fileID: 646}
+  - component: {fileID: 2156719603995255893}
   m_Layer: 0
   m_Name: Archer
   m_TagString: ArcherPlayer
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72f36c0514da2774d96f8c6fdcde7e06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReloadTime: 70
+  ReloadTime: 8
   Arrow: {fileID: 245, guid: 4ebdbfd4c74d65e4c8a630158958301f, type: 3}
   prefabArrow: {fileID: 660, guid: 4ebdbfd4c74d65e4c8a630158958301f, type: 3}
 --- !u!114 &604
@@ -214,7 +214,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09246664b55c64e46ada8f55902ac7ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameView: {fileID: 0}
+  lifeRef: 0
   life: 3
+  upgrade: 0
 --- !u!114 &599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,7 +337,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &646
+--- !u!114 &2156719603995255893
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -343,12 +346,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 103}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca6b26dfc7493a04f84d5b4adba69be1, type: 3}
+  m_Script: {fileID: 11500000, guid: bb66be5f8b13a744c98c6c48d3fd181a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windCircle_prefab: {fileID: 244, guid: 8a0cbf5b465d23842b6a0e72f689e1ab, type: 3}
   timerRef: 10
   effectTimeRef: 1
+  timer: 0
 --- !u!1 &106
 GameObject:
   m_ObjectHideFlags: 0
