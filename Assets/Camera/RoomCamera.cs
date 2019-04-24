@@ -6,7 +6,7 @@ public class RoomCamera : MonoBehaviour
 {
     public Vector3 offset;
     public float angle;
-    Camera camera;
+    new Camera camera;
 
     private void Start()
     {

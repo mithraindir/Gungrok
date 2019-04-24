@@ -6,7 +6,7 @@ using Photon.Pun;
 public class DiseableCamera : MonoBehaviourPun
 {
     GameObject player;
-    public Camera camera;
+    public new Camera camera;
     GameObject knight;
     GameObject archer;
 
