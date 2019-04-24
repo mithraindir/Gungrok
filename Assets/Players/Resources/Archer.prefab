@@ -214,7 +214,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09246664b55c64e46ada8f55902ac7ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameView: {fileID: 0}
+  lifeRef: 0
   life: 3
+  upgrade: 0
 --- !u!114 &599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,6 +352,7 @@ MonoBehaviour:
   windCircle_prefab: {fileID: 244, guid: 8a0cbf5b465d23842b6a0e72f689e1ab, type: 3}
   timerRef: 10
   effectTimeRef: 1
+  timer: 0
 --- !u!1 &106
 GameObject:
   m_ObjectHideFlags: 0
