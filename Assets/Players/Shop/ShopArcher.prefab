@@ -316,7 +316,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: decrease your arrow reload time by 5
+  m_Text: 'decrease your arrow reload time by 0.5 seconds
+
+'
 --- !u!1 &1156286776756774004
 GameObject:
   m_ObjectHideFlags: 0

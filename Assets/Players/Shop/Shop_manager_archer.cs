@@ -98,7 +98,7 @@ public class Shop_manager_archer : MonoBehaviourPun
                     DashCostText.text = "NO MORE UPGRADES";
                 }
 
-                if (PlayerArrow.ReloadTime == 2) //maximum value of reload time
+                if (PlayerArrow.ReloadTime == 1) //maximum value of reload time
                 {
                     Arrowupgrade.interactable = false;
                     ArrowCostText.text = "NO MORE UPGRADES";
@@ -142,7 +142,7 @@ public class Shop_manager_archer : MonoBehaviourPun
         ArrowCost += 250; //raise of the upgrade cost
         Money2display.text = "" + money;
         ArrowCostText.text = "" + ArrowCost;
-        PlayerArrow.ReloadTime -= 2;
+        PlayerArrow.ReloadTime -= 0.5f;
         CurrentArrow.text = PlayerArrow.ReloadTime + " seconds";
     }
 
