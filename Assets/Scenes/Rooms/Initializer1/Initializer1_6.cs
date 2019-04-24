@@ -15,10 +15,10 @@ public class Initializer1_6 : MonoBehaviourPun
             if (collision.gameObject.tag == "ArcherPlayer")
             {
 
-                MobSpawner.Spawn("Wizzard", 505, 0, -8);
-                MobSpawner.Spawn("Wizzard", 512, 0, 11);
-                MobSpawner.Spawn("Wizzard", 505, 0, 18);
-                MobSpawner.Spawn("Wizzard", 512, 0, -2);
+                MobSpawner.Spawn("Wizzard", 450, 0, 10);
+                MobSpawner.Spawn("Wizzard", 460, 0, 10);
+                MobSpawner.Spawn("Wizzard", 470, 0, 5);
+                MobSpawner.Spawn("Wizzard", 440, 0, 5);
                 HasSpawned = true;
             }
 
