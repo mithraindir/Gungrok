@@ -27,6 +27,9 @@ TagManager:
   - HP
   - CommonHP
   - HPsync
+  - DashButton
+  - DashDescription
+  - DashPrice
   layers:
   - Default
   - TransparentFX

@@ -4,60 +4,59 @@ using UnityEngine;
 using Photon.Pun;
 using UnityEngine.UI;
 
-public class Shop_manager_knight : MonoBehaviourPun
+public class Shop_manager_archer : MonoBehaviourPun
 {
 
     public int money; //the player's current balance
     public GameObject ShopPrefab; //the shop ui prefab
-    GameObject player = null; 
+    GameObject player = null;
     Health PlayerHealth; //the player's health script
-    ShielBash_circle PlayerSB; //the player's SB script
+    Dash PlayerDash; //the player's SB script
     GameObject ShopUI; //the shop UI which is shown/instantiated
     bool shopping; //to know if the shop panel/UI is activated/instantiated
-    Button SBupgrade; //the button to upgrade the SB
-    Text SBCostText;
-    Text CurrentSBTimer;
-    int SBCost; //the cost of the upgrade shown on the button
+    Button Dashupgrade; //the button to upgrade the SB
+    Text DashCostText;
+    Text CurrentDashTimer;
+    int DashCost; //the cost of the upgrade shown on the button
     Button HPupgrade; //the button to upgrade the HP
     Text HPCostText;
     Text CurrentHP;
     int HPCost; //the cost of the upgrade shown on the button
     Text Money2display; //the balnce shown in text form
-    GameObject SBDescription; //the description of the SB upgrade
+    GameObject DashDescription; //the description of the SB upgrade
     GameObject HPDescription; //the description of the HP upgrade
 
     // Start is called before the first frame update
     void Start()
     {
-        SBCost = 50;
+        DashCost = 50;
         HPCost = 500;
         shopping = false;
-        
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (PhotonNetwork.LocalPlayer.NickName == "Player 1") //ATTENTION for test purposes on not (!) to be removed to work for knight only
+        if (PhotonNetwork.LocalPlayer.NickName != "Player 1") 
             return;
 
         if (Input.GetKeyDown(KeyCode.M) && !shopping)
         {
-            player = GameObject.FindGameObjectWithTag("KnightPlayer");
+            player = GameObject.FindGameObjectWithTag("ArcherPlayer");
             PlayerHealth = player.GetComponent<Health>();
-            PlayerSB = player.GetComponent<ShielBash_circle>();
+            PlayerDash = player.GetComponent<Dash>();
             shopping = true;
             ShopUI = Instantiate(ShopPrefab); //creation of the Shop Ui and display 
-            SBDescription = GameObject.FindGameObjectWithTag("SBDescription");
+            DashDescription = GameObject.FindGameObjectWithTag("DashDescription");
             HPDescription = GameObject.FindGameObjectWithTag("HPDescription");
-            SBupgrade = GameObject.FindGameObjectWithTag("SBbutton").GetComponent<Button>();
-            SBupgrade.onClick.AddListener(SBButtonClick);
+            Dashupgrade = GameObject.FindGameObjectWithTag("DashButton").GetComponent<Button>();
+            Dashupgrade.onClick.AddListener(DashButtonClick);
             HPupgrade = GameObject.FindGameObjectWithTag("HPbutton").GetComponent<Button>();
             HPupgrade.onClick.AddListener(HPButtonClick);
-            SBCostText = GameObject.FindGameObjectWithTag("SBPrice").GetComponent<Text>();
-            SBCostText.text = "" + SBCost; //display of the correct price for SB upgrade
-            CurrentSBTimer = GameObject.FindGameObjectWithTag("SBTimer").GetComponent<Text>();
-            CurrentSBTimer.text = PlayerSB.timerRef + " seconds"; //update the current cooldown display
+            DashCostText = GameObject.FindGameObjectWithTag("DashPrice").GetComponent<Text>();
+            DashCostText.text = "" + DashCost; //display of the correct price for SB upgrade
+            CurrentDashTimer = GameObject.FindGameObjectWithTag("SBTimer").GetComponent<Text>();
+            CurrentDashTimer.text = PlayerDash.timerRef + " seconds"; //update the current cooldown display
             HPCostText = GameObject.FindGameObjectWithTag("HPPrice").GetComponent<Text>();
             HPCostText.text = "" + HPCost; //display of the correct price for HP upgrade
             CurrentHP = GameObject.FindGameObjectWithTag("HP").GetComponent<Text>();
@@ -80,36 +79,36 @@ public class Shop_manager_knight : MonoBehaviourPun
                 if (Input.GetKeyDown(KeyCode.M))
                 {
                     shopping = false;
-                    SBupgrade.onClick.RemoveListener(SBButtonClick);
-                    HPupgrade.onClick.RemoveListener(HPButtonClick);
+                    Dashupgrade.onClick.RemoveListener(DashButtonClick);
+                    //HPupgrade.onClick.RemoveListener(SBButtonClick);
                     Destroy(ShopUI);
                     player.SetActive(true); //reactivate the player
                 }
 
-                if (PlayerSB.timerRef == 2)
+                if (PlayerDash.timerRef == 2)
                 {
-                    SBupgrade.interactable = false;
-                    SBCostText.text = "NO MORE UPGRADES";
+                    Dashupgrade.interactable = false;
+                    DashCostText.text = "NO MORE UPGRADES";
                 }
             }
         }
-        
+
 
     }
 
-    void SBButtonClick() //called when SB Button is clicked
+    void DashButtonClick() //called when SB Button is clicked
     {
-        if (SBCost > money)
+        if (DashCost > money)
         {
             return;
         }
-        money -= SBCost; //remove the correct amount of money from the player's balance
-        SBCost += 100; //raise of the upgrade cost
+        money -= DashCost; //remove the correct amount of money from the player's balance
+        DashCost += 100; //raise of the upgrade cost
         Money2display.text = "" + money;
-        SBCostText.text = "" + SBCost;
-        PlayerSB.timerRef -= 2; //reduction of the shildBash cooldown
-        PlayerSB.timer = PlayerSB.timerRef;
-        CurrentSBTimer.text = PlayerSB.timerRef + " seconds";
+        DashCostText.text = "" + DashCost;
+        PlayerDash.timerRef -= 2; //reduction of the shildBash cooldown
+        PlayerDash.timer = PlayerDash.timerRef;
+        CurrentDashTimer.text = PlayerDash.timerRef + " seconds";
     }
 
     void SBButtonMouseOver() //called when the mouse is over the SB Button

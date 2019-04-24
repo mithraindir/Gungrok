@@ -559,9 +559,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c8e6370358f8e4aae953dbbfe95200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerPrefab: {fileID: 612, guid: b8f2de2e1e91e1c4cac9d4e1073713f3, type: 3}
-  PlayerPrefab2: {fileID: 2804358264597077536, guid: 474db34b192553b49afa2bfd950940fe,
-    type: 3}
+  PlayerPrefab: {fileID: 614, guid: b8f2de2e1e91e1c4cac9d4e1073713f3, type: 3}
+  PlayerPrefab2: {fileID: 676, guid: 474db34b192553b49afa2bfd950940fe, type: 3}
   LocalPlayer: {fileID: 0}
   UpDatedForPlayer2: 0
   compteur: 0
@@ -739,7 +738,7 @@ PrefabInstance:
     - target: {fileID: 751049300324734235, guid: 6d1d0d2c5b6b517409dc851de88e2279,
         type: 3}
       propertyPath: m_Name
-      value: ShopMangerKnight
+      value: ShopManager
       objectReference: {fileID: 0}
     - target: {fileID: 843796690800386945, guid: 6d1d0d2c5b6b517409dc851de88e2279,
         type: 3}
@@ -798,6 +797,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d1d0d2c5b6b517409dc851de88e2279, type: 3}
+--- !u!1 &2038350515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 751049300324734235, guid: 6d1d0d2c5b6b517409dc851de88e2279,
+    type: 3}
+  m_PrefabInstance: {fileID: 1832223783}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2038350516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038350515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0603c1dbc9b9a3844a31d458bbe7aeb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 50
+  ShopPrefab: {fileID: 4054336996011276398, guid: 8ff26c45aa597fd4c94ea986167b7a42,
+    type: 3}
 --- !u!1001 &3543330569289922511
 PrefabInstance:
   m_ObjectHideFlags: 0

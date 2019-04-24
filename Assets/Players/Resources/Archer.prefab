@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 614}
   - component: {fileID: 562}
   - component: {fileID: 563}
-  - component: {fileID: 630}
+  - component: {fileID: 5991123695917124903}
   m_Layer: 0
   m_Name: Archer
   m_TagString: ArcherPlayer
@@ -337,7 +337,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &630
+--- !u!114 &5991123695917124903
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -346,10 +346,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca6b26dfc7493a04f84d5b4adba69be1, type: 3}
+  m_Script: {fileID: 11500000, guid: bb66be5f8b13a744c98c6c48d3fd181a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windCircle_prefab: {fileID: 102, guid: 8a0cbf5b465d23842b6a0e72f689e1ab, type: 3}
   timerRef: 10
   effectTimeRef: 1
   timer: 0
