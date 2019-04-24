@@ -20,7 +20,7 @@ public class DoorManager : MonoBehaviour
                 //tp le guerrier sur l'archer
                 if (GameObject.FindGameObjectWithTag("KnightPlayer"))
                 {
-                    GameObject.FindGameObjectWithTag("KnightPlayer").transform.position = this.gameObject.transform.position;
+                    GameObject.FindGameObjectWithTag("KnightPlayer").transform.position = collision.gameObject.transform.position;
                 }
 
                 Door1.GetComponent<MeshRenderer>().enabled = true;
@@ -38,7 +38,7 @@ public class DoorManager : MonoBehaviour
                     //tp le guerrier sur l'archer
                     if (GameObject.FindGameObjectWithTag("ArcherPlayer"))
                     {
-                        GameObject.FindGameObjectWithTag("ArcherPlayer").transform.position = this.gameObject.transform.position;
+                        GameObject.FindGameObjectWithTag("ArcherPlayer").transform.position = collision.gameObject.transform.position;
                     }
 
                     Door1.GetComponent<MeshRenderer>().enabled = true;

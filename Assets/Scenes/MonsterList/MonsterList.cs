@@ -9,10 +9,9 @@ public class MonsterList : MonoBehaviourPun
 
     public static void AddMonster(GameObject Monster)
     {
-        if (!Monsterlist.Contains(Monster))
-        {
+        
             Monsterlist.Add(Monster);
-        }
+        
     }
 
     public static void DeleteMonster(GameObject Monster)

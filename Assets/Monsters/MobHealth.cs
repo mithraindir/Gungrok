@@ -26,7 +26,8 @@ public class MobHealth : MonoBehaviourPun
             ShopKnight = GameObject.FindGameObjectWithTag("ShopKnight").GetComponent<Shop_manager_knight>();
             ShopArcher.money += money;
             ShopKnight.money += money;*/
-            MonsterList.DeleteMonster(this.gameObject);
+            photonView.RPC("DeleteMonster", RpcTarget.All, null);
+            
             PhotonNetwork.Destroy(this.gameObject);
         }
     }
@@ -39,4 +40,12 @@ public class MobHealth : MonoBehaviourPun
         ShopArcher.money += money;
         ShopKnight.money += money;
     }
+
+    [PunRPC]
+    public void DeleteMonster()
+    {
+        MonsterList.DeleteMonster(this.gameObject);
+        MonsterList.DeleteMonster(null);
+    }
+
 }

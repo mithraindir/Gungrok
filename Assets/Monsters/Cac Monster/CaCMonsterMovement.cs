@@ -96,9 +96,24 @@ public class CaCMonsterMovement : MonoBehaviourPun
     public static GameObject SpawnZombie( ref GameObject zombie, ref CaCMonsterMovement PrefabZombie, Vector3 Position)
     {
 
-
-        zombie = PhotonNetwork.Instantiate(PrefabZombie.gameObject.name, Position, Quaternion.identity);
-        return zombie;
+        if (PhotonNetwork.LocalPlayer.NickName == "Player 1")
+        {
+            zombie = PhotonNetwork.Instantiate(PrefabZombie.gameObject.name, Position, Quaternion.identity);
+            return zombie;
+        }
+        return null;
         
+    }
+
+    public static GameObject SpawnGhoul(ref GameObject ghoul, ref CaCMonsterMovement PrefabGhoul, Vector3 Position)
+    {
+
+        if (PhotonNetwork.LocalPlayer.NickName == "Player 1")
+        {
+            ghoul = PhotonNetwork.Instantiate(PrefabGhoul.gameObject.name, Position, Quaternion.identity);
+            return ghoul;
+        }
+        return null;
+
     }
 }
