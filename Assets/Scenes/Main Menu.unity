@@ -424,6 +424,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 358939407, guid: 02d7edfbcd0501e4489d63c2b00c409c, type: 3}
+      propertyPath: m_Name
+      value: PlayPanel
+      objectReference: {fileID: 0}
     - target: {fileID: 318762072, guid: 02d7edfbcd0501e4489d63c2b00c409c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1529,6 +1533,16 @@ PrefabInstance:
     - target: {fileID: 1002828856, guid: 02d7edfbcd0501e4489d63c2b00c409c, type: 3}
       propertyPath: m_Text
       value: Choose your character
+      objectReference: {fileID: 0}
+    - target: {fileID: 277302185852490564, guid: 02d7edfbcd0501e4489d63c2b00c409c,
+        type: 3}
+      propertyPath: m_Name
+      value: YesButon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217407351092028735, guid: 02d7edfbcd0501e4489d63c2b00c409c,
+        type: 3}
+      propertyPath: m_Name
+      value: NoButon
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 236067426, guid: 02d7edfbcd0501e4489d63c2b00c409c, type: 3}
