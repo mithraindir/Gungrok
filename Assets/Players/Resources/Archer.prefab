@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
+  m_SynchronizePosition: 0
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
 --- !u!114 &615
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72f36c0514da2774d96f8c6fdcde7e06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReloadTime: 1
+  ReloadTime: 3
   Arrow: {fileID: 114, guid: 4ebdbfd4c74d65e4c8a630158958301f, type: 3}
   prefabArrow: {fileID: 635, guid: 4ebdbfd4c74d65e4c8a630158958301f, type: 3}
 --- !u!114 &604

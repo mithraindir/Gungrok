@@ -45,9 +45,6 @@ public class PlayerMovement : MonoBehaviourPun
 
             //Make the object always face the direction it is moving in
             player.transform.rotation = Quaternion.LookRotation(veloSave, Vector3.up);
-
-            Debug.Log("Master: " + PhotonNetwork.IsMasterClient + " | Players In Room: " + PhotonNetwork.CurrentRoom.PlayerCount + " | RoomName: " + PhotonNetwork.CurrentRoom.Name);
-            Debug.Log(PhotonNetwork.LocalPlayer.NickName);
         }
         
     }
