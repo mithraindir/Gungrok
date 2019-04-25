@@ -48,8 +48,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         TypedLobby lobby = new TypedLobby("Lobby", LobbyType.Default);
-        PhotonNetwork.JoinLobby(lobby);
-        Debug.Log("room disponible : " + PhotonNetwork.CountOfRooms);
+        PhotonNetwork.JoinLobby(lobby)
         base.OnConnectedToMaster();
         TriesToConnectToMaster = false;
         Debug.Log("Connected to Master!");
