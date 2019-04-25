@@ -1544,6 +1544,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: NoButon
       objectReference: {fileID: 0}
+    - target: {fileID: 786606323, guid: 02d7edfbcd0501e4489d63c2b00c409c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 786606323, guid: 02d7edfbcd0501e4489d63c2b00c409c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 786606323, guid: 02d7edfbcd0501e4489d63c2b00c409c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 786606323, guid: 02d7edfbcd0501e4489d63c2b00c409c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 675160916}
+    - target: {fileID: 786606323, guid: 02d7edfbcd0501e4489d63c2b00c409c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 786606323, guid: 02d7edfbcd0501e4489d63c2b00c409c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 236067426, guid: 02d7edfbcd0501e4489d63c2b00c409c, type: 3}
     - {fileID: 1970216977, guid: 02d7edfbcd0501e4489d63c2b00c409c, type: 3}
