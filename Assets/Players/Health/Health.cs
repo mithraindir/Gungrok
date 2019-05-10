@@ -8,15 +8,21 @@ public class Health : MonoBehaviourPun
 {
     Slider HealthSlider;
     public PhotonView gameView;
-    GameObject commoneHP;
+    public GameObject commoneHP;
     public float lifeRef;
     public float life;
     public bool upgrade;
+    //GameObject[] CHP;
     GameObject objet;
     GameObject otherPlayer;
 
     private void Start()
     {
+        if (GameObject.FindWithTag("CommonHP") == null)
+        {
+            for (int i = 0; i < life; i++)
+                PhotonNetwork.Instantiate(commoneHP.name, new Vector3(0, 0, 0), Quaternion.identity);
+        }
         gameView = PhotonView.Get(this);
         lifeRef = life;
         HealthSlider = GameObject.FindGameObjectWithTag("healthSlider").GetComponent<Slider>();
@@ -26,8 +32,8 @@ public class Health : MonoBehaviourPun
 
     private void OnCollisionEnter(Collision other)
     {
-        if (!photonView.IsMine)
-            return;
+        //if (!photonView.IsMine || life == 0)
+            //return;
         if (other.gameObject.GetComponent<Rigidbody>() != null)
         {
             objet = other.gameObject;
@@ -35,9 +41,10 @@ public class Health : MonoBehaviourPun
             {
                 if (other.contacts[0].thisCollider.gameObject.tag != "shield") //check if first point of contact is shild and if not remove health
                 {
+                    PhotonNetwork.Destroy(GameObject.FindGameObjectWithTag("CommonHP"));
                     /*commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
                     commoneHP.transform.position -= new Vector3(1, 0, 0);*/
-                    gameView.RPC("HealthReduction", RpcTarget.All, null);
+                    //gameView.RPC("HealthReduction", RpcTarget.All, null);
                 }
             }
         }
@@ -86,9 +93,13 @@ public class Health : MonoBehaviourPun
         {
             /*commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
             commoneHP.transform.position = new Vector3(3, 0, 0);*/
-            gameView.RPC("changeHealth", RpcTarget.All, null);
+            for (int i = GameObject.FindGameObjectsWithTag("CommonHP").Length; i<lifeRef;i++)
+            {
+                PhotonNetwork.Instantiate(commoneHP.name, new Vector3(0, 0, 0), Quaternion.identity);
+            }
         }
 
+        life = GameObject.FindGameObjectsWithTag("CommonHP").Length;
         /*commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
         life = commoneHP.GetComponent<Common_Health>().Health;*/
         HealthSlider.value = life;

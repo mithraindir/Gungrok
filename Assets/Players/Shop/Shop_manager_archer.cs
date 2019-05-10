@@ -67,7 +67,6 @@ public class Shop_manager_archer : MonoBehaviourPun
             player.GetComponent<PlayerMovement>().enabled = false;
             PlayerArrow.enabled = false;
             PlayerDash.enabled = false;
-            //player.SetActive(false); //deactivate the player so that it can no longer move
         }
         else
         {
@@ -89,7 +88,6 @@ public class Shop_manager_archer : MonoBehaviourPun
                     player.GetComponent<PlayerMovement>().enabled = true;
                     PlayerArrow.enabled = true;
                     PlayerDash.enabled = true;
-                    //player.SetActive(true); //reactivate the player
                 }
 
                 if (PlayerDash.timerRef == 2) //maximum value of Dash cooldown
