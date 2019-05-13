@@ -102,7 +102,7 @@ public class Shop_manager_knight : MonoBehaviourPun
                 if (PlayerHealth.life == 3)
                 {
                     HPupgrade.interactable = false;
-                    SBCostText.text = "Full Life";
+                    HPCostText.text = "Full Life";
                 }
             }
         }
@@ -143,7 +143,8 @@ public class Shop_manager_knight : MonoBehaviourPun
         HPCost += 250; //raise of the upgrade cost
         Money2display.text = "" + money;
         HPCostText.text = "" + HPCost;
-        PlayerHealth.upgrade = true;
+        //PlayerHealth.upgrade = true;
+        PhotonNetwork.Destroy(GameObject.FindGameObjectWithTag("CommonHP"));
         CurrentHP.text = PlayerHealth.life + " HP";
     }
 
