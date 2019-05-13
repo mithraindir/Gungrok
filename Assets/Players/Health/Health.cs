@@ -18,11 +18,11 @@ public class Health : MonoBehaviourPun
 
     private void Start()
     {
-        if (GameObject.FindWithTag("CommonHP") == null)
+        /*if (PhotonNetwork.LocalPlayer.NickName == "Player 1")
         {
             for (int i = 0; i < life; i++)
                 PhotonNetwork.Instantiate(commoneHP.name, new Vector3(0, 0, 0), Quaternion.identity);
-        }
+        }*/
         gameView = PhotonView.Get(this);
         lifeRef = life;
         HealthSlider = GameObject.FindGameObjectWithTag("healthSlider").GetComponent<Slider>();
@@ -32,8 +32,8 @@ public class Health : MonoBehaviourPun
 
     private void OnCollisionEnter(Collision other)
     {
-        //if (!photonView.IsMine || life == 0)
-            //return;
+        if (!photonView.IsMine || life == 0)
+            return;
         if (other.gameObject.GetComponent<Rigidbody>() != null)
         {
             objet = other.gameObject;
@@ -41,7 +41,8 @@ public class Health : MonoBehaviourPun
             {
                 if (other.contacts[0].thisCollider.gameObject.tag != "shield") //check if first point of contact is shild and if not remove health
                 {
-                    PhotonNetwork.Destroy(GameObject.FindGameObjectWithTag("CommonHP"));
+                    //PhotonNetwork.Destroy(GameObject.FindGameObjectWithTag("CommonHP"));
+                     PhotonNetwork.Instantiate(commoneHP.name, new Vector3(0, 0, 0), Quaternion.identity);
                     /*commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
                     commoneHP.transform.position -= new Vector3(1, 0, 0);*/
                     //gameView.RPC("HealthReduction", RpcTarget.All, null);
@@ -73,6 +74,7 @@ public class Health : MonoBehaviourPun
         if (!photonView.IsMine) //if removed knight health sync to archer
             return;
 
+
         if (upgrade)
         {
             gameView.RPC("changeHealthRef", RpcTarget.All,lifeRef);
@@ -93,13 +95,13 @@ public class Health : MonoBehaviourPun
         {
             /*commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
             commoneHP.transform.position = new Vector3(3, 0, 0);*/
-            for (int i = GameObject.FindGameObjectsWithTag("CommonHP").Length; i<lifeRef;i++)
+            if (GameObject.FindGameObjectsWithTag("CommonHP").Length != 0)
             {
-                PhotonNetwork.Instantiate(commoneHP.name, new Vector3(0, 0, 0), Quaternion.identity);
+                PhotonNetwork.Destroy(GameObject.FindGameObjectWithTag("CommonHP"));
             }
         }
 
-        life = GameObject.FindGameObjectsWithTag("CommonHP").Length;
+        life = 3 - GameObject.FindGameObjectsWithTag("CommonHP").Length;
         /*commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
         life = commoneHP.GetComponent<Common_Health>().Health;*/
         HealthSlider.value = life;
