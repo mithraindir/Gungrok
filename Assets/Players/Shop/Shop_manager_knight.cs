@@ -98,6 +98,12 @@ public class Shop_manager_knight : MonoBehaviourPun
                     SBupgrade.interactable = false;
                     SBCostText.text = "NO MORE UPGRADES";
                 }
+
+                if (PlayerHealth.life == 3)
+                {
+                    HPupgrade.interactable = false;
+                    SBCostText.text = "Full Life";
+                }
             }
         }
         
@@ -137,9 +143,8 @@ public class Shop_manager_knight : MonoBehaviourPun
         HPCost += 250; //raise of the upgrade cost
         Money2display.text = "" + money;
         HPCostText.text = "" + HPCost;
-        PlayerHealth.lifeRef += 1;
         PlayerHealth.upgrade = true;
-        CurrentHP.text = PlayerHealth.lifeRef + " HP";
+        CurrentHP.text = PlayerHealth.life + " HP";
     }
 
     void HPButtonMouseOver() //called when the mouse is over the HP Button

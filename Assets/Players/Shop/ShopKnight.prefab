@@ -639,7 +639,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Increase your total hitpoint by one
+  m_Text: '
+
+    Recover one Hit Point'
 --- !u!1 &2805607023862575785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,7 +1627,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Life \nUpgrade"
+  m_Text: "Healing \nPotion"
 --- !u!1 &9053001771886887415
 GameObject:
   m_ObjectHideFlags: 0

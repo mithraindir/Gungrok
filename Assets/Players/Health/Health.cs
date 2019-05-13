@@ -77,12 +77,13 @@ public class Health : MonoBehaviourPun
 
         if (upgrade)
         {
-            gameView.RPC("changeHealthRef", RpcTarget.All,lifeRef);
+            /*gameView.RPC("changeHealthRef", RpcTarget.All,lifeRef);
             gameView.RPC("changeHealth", RpcTarget.All, null);
             /*commoneHP = GameObject.FindGameObjectWithTag("CommonHP");
-            commoneHP.transform.position = new Vector3(lifeRef, 0, 0);*/
-            HealthSlider.maxValue = lifeRef;
+            commoneHP.transform.position = new Vector3(lifeRef, 0, 0);
+            HealthSlider.maxValue = lifeRef;*/
             upgrade = false;
+            PhotonNetwork.Destroy(GameObject.FindGameObjectWithTag("CommonHP"));
         }
 
         if (life <= 0)
