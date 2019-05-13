@@ -245,6 +245,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerRef: 10
-  effectTimeRef: 0.2
+  effectTimeRef: 0.1
   speed: 90
   timer: 0
