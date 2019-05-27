@@ -28,7 +28,7 @@ public class Dash : MonoBehaviourPun
         if (!photonView.IsMine) //so that the other player don't activate this player's ability
             return;
 
-        if (Input.GetKeyDown("space") && timer >= timerRef)
+        if (Input.GetKeyDown(KeyCode.Space) && timer >= timerRef)
         {
             this.GetComponent<Rigidbody>().velocity = speed * transform.forward.normalized;
             effectTime = 0; //réinitialise le temps d'effet
@@ -36,7 +36,7 @@ public class Dash : MonoBehaviourPun
             PMov.enabled = false;
             effect = true;
         }
-
+        
         //cheat to regain full timer 
         if (Input.GetKeyDown(KeyCode.Alpha2))
             timer = timerRef;
