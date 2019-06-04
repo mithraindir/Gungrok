@@ -408,6 +408,30 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2052111881}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &346167080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7424504436385524824, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278059358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &346167081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346167080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c40ad19b52eddc448fc6c338f98f93b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &489030177 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 857533253, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278059358}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &579997798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1449,12 +1473,42 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 601704451}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1720699108 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 857533253, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+--- !u!1 &1519284918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7140265939671275693, guid: ed2b86b8913a67844a0af5e3cc824d6d,
     type: 3}
-  m_PrefabInstance: {fileID: 664996016}
+  m_PrefabInstance: {fileID: 1278059358}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1519284919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519284918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b120adf7147ab6744871c916dd25e056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1720506410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510586544941708491, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278059358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1720506411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720506410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c40ad19b52eddc448fc6c338f98f93b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1769263822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,10 +1534,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769263822}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.21228227, y: 0.08785801, z: 0.173544}
-  m_LocalScale: {x: 0.8534317, y: 1.0509241, z: 2.9286017}
+  m_LocalPosition: {x: -0.29234618, y: 0.099999994, z: 0.12107045}
+  m_LocalScale: {x: 0.85343176, y: 1.0509244, z: 2.9286025}
   m_Children: []
-  m_Father: {fileID: 1720699108}
+  m_Father: {fileID: 489030177}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!212 &1769263824
@@ -1685,6 +1739,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShopMangerKnight
       objectReference: {fileID: 0}
+    - target: {fileID: 751049300324734235, guid: 6d1d0d2c5b6b517409dc851de88e2279,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 843796690800386945, guid: 6d1d0d2c5b6b517409dc851de88e2279,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1738,6 +1797,16 @@ PrefabInstance:
     - target: {fileID: 843796690800386945, guid: 6d1d0d2c5b6b517409dc851de88e2279,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080677761369468008, guid: 6d1d0d2c5b6b517409dc851de88e2279,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4162982507782187024, guid: 6d1d0d2c5b6b517409dc851de88e2279,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
