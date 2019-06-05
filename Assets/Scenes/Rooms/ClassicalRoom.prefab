@@ -8224,10 +8224,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
-    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
-      propertyPath: m_Name
-      value: Props_Wall_LightStick (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.432
@@ -8284,6 +8280,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.21018496
       objectReference: {fileID: 0}
+    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
+      propertyPath: m_Name
+      value: Props_Wall_LightStick (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 2226318501654291378, guid: 6dcdd798812b85b4796fb2548a3a311d,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -8329,10 +8329,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
-    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
-      propertyPath: m_Name
-      value: Props_Wall_LightStick (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.4697
@@ -8389,6 +8385,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.21018496
       objectReference: {fileID: 0}
+    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
+      propertyPath: m_Name
+      value: Props_Wall_LightStick (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 2226318501654291378, guid: 6dcdd798812b85b4796fb2548a3a311d,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -8434,10 +8434,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
-    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
-      propertyPath: m_Name
-      value: Props_Wall_LightStick (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.401
@@ -8494,6 +8490,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.21018496
       objectReference: {fileID: 0}
+    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
+      propertyPath: m_Name
+      value: Props_Wall_LightStick (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 2226318501654291378, guid: 6dcdd798812b85b4796fb2548a3a311d,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -8539,10 +8539,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
-    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
-      propertyPath: m_Name
-      value: Porte/mur gauche
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.7890015
@@ -8599,6 +8595,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.63268405
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+      propertyPath: m_Name
+      value: Porte/mur gauche
+      objectReference: {fileID: 0}
     - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -8628,10 +8628,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
-    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
-      propertyPath: m_Name
-      value: Props_Wall_LightStick
-      objectReference: {fileID: 0}
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.0891
@@ -8688,6 +8684,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.21018472
       objectReference: {fileID: 0}
+    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
+      propertyPath: m_Name
+      value: Props_Wall_LightStick
+      objectReference: {fileID: 0}
     - target: {fileID: 2226318501654291378, guid: 6dcdd798812b85b4796fb2548a3a311d,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -8711,7 +8711,7 @@ PrefabInstance:
     - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
         type: 3}
       propertyPath: m_Range
-      value: 17.25
+      value: 15.06
       objectReference: {fileID: 0}
     - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
         type: 3}
@@ -8733,10 +8733,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
-    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
-      propertyPath: m_Name
-      value: Porte/mur droit
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.792
@@ -8793,6 +8789,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.649576
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+      propertyPath: m_Name
+      value: Porte/mur droit
+      objectReference: {fileID: 0}
     - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -8822,10 +8822,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
-    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
-      propertyPath: m_Name
-      value: Porte/mur haut
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.798
@@ -8882,6 +8878,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.6810243
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+      propertyPath: m_Name
+      value: Porte/mur haut
+      objectReference: {fileID: 0}
     - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -8905,10 +8905,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
-    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
-      propertyPath: m_Name
-      value: Porte/mur bas
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.801
@@ -8964,6 +8960,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.6810251
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+      propertyPath: m_Name
+      value: Porte/mur bas
       objectReference: {fileID: 0}
     - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
