@@ -10,9 +10,12 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public Button BtnConnectMaster;
     public Button BtnConnectRoom;
+    public GameObject ESCMenu;
 
     public bool TriesToConnectToMaster;
     public bool TriesToConnectToRoom;
+    public bool opened;
+    public string scenename;
 
     // Use this for initialization
     void Start()
@@ -20,11 +23,30 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         DontDestroyOnLoad(gameObject);
         TriesToConnectToMaster = false;
         TriesToConnectToRoom = false;
+        opened = false;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        /*scenename = SceneManager.GetActiveScene().name;
+        if (scenename != "Main Menu" && scenename != "Death")
+        {
+            ESCMenu = GameObject.FindGameObjectWithTag("UI");
+            if (Input.GetKeyDown(KeyCode.Escape) && opened == false)
+            {
+                Debug.Log("Menu Open");
+                opened = true;
+                ESCMenu.SetActive(true);
+                
+            }
+            else if (Input.GetKeyDown(KeyCode.Escape) && opened == true)
+            {
+                Debug.Log("Menu Close");
+                ESCMenu.SetActive(false);
+                opened = false;
+            }
+        }*/
     }
 
     public void OnClickConnectToMaster()

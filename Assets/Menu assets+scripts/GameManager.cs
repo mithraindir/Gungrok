@@ -28,16 +28,15 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     void Start()
     {
-            PlayerMovement.RefreshInstance(ref LocalPlayer, PlayerPrefab, PlayerPrefab2);
+        PlayerMovement.RefreshInstance(ref LocalPlayer, PlayerPrefab, PlayerPrefab2);
     }
 
     private void FixedUpdate()
     {
         if (!UpDatedForPlayer2 && PhotonNetwork.CurrentRoom.PlayerCount == 2)
         {
-
             compteur += 1;
-            if (compteur == 100)    
+            if (compteur == 100)
             {
                 UpDatedForPlayer2 = true;
                 compteur = 0;
@@ -45,6 +44,7 @@ public class GameManager : MonoBehaviourPunCallbacks
                 Debug.Log("actu instance");
             }
         }
+            
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)

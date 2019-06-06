@@ -36,6 +36,7 @@ TagManager:
   - ShootPrice
   - ShootTimer
   - ReloadTime
+  - UI
   layers:
   - Default
   - TransparentFX
