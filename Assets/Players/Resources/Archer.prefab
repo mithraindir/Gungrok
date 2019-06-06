@@ -255,6 +255,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 263}
     m_Modifications:
+    - target: {fileID: 100010, guid: 3a10e5b91815f924cb0f4fe9ff9f7407, type: 3}
+      propertyPath: m_Name
+      value: Model Archer
+      objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 3a10e5b91815f924cb0f4fe9ff9f7407, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -311,10 +315,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4
       objectReference: {fileID: 0}
-    - target: {fileID: 100010, guid: 3a10e5b91815f924cb0f4fe9ff9f7407, type: 3}
-      propertyPath: m_Name
-      value: Model Archer
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a10e5b91815f924cb0f4fe9ff9f7407, type: 3}
 --- !u!4 &1885521006620810001 stripped
@@ -334,17 +334,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: bow
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: c967a4ca37831894592de38d33985015, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c967a4ca37831894592de38d33985015, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.939
+      value: -1.9390106
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c967a4ca37831894592de38d33985015, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.645
+      value: 1.6450024
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c967a4ca37831894592de38d33985015, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.254
+      value: 0.25399983
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c967a4ca37831894592de38d33985015, type: 3}
       propertyPath: m_LocalRotation.x
@@ -377,6 +381,18 @@ PrefabInstance:
     - target: {fileID: 400002, guid: c967a4ca37831894592de38d33985015, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 76.633
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: c967a4ca37831894592de38d33985015, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: c967a4ca37831894592de38d33985015, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: c967a4ca37831894592de38d33985015, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c967a4ca37831894592de38d33985015, type: 3}
