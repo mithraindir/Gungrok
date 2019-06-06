@@ -26,6 +26,8 @@ public class OpenMenu : MonoBehaviour
 
     public void CloseMenu()
     {
+        Debug.Log("Menu Close");
+        ESCMenu.SetActive(false);
         opened = false;
     }
 }
