@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2e6ef48e63f454cb22d20073e4b601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthPoint: 5
+  HealthPoint: 3
   money: 10
 --- !u!54 &547
 Rigidbody:
