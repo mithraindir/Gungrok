@@ -7,10 +7,13 @@ public class MonsterList : MonoBehaviourPun
 {
     static List<GameObject> Monsterlist = new List<GameObject>();
 
+    static int nb = 0;
+
     public static void AddMonster(GameObject Monster)
     {
         
             Monsterlist.Add(Monster);
+            MonsterList.nb += 1;
         
     }
 
@@ -19,12 +22,14 @@ public class MonsterList : MonoBehaviourPun
         if (Monsterlist.Contains(Monster))
         {
             Monsterlist.Remove(Monster);
+
         }
+        nb -= 1;
     }
 
     public static bool IsEmpty()
     {
-        return Monsterlist.Count == 0;
+        return MonsterList.nb == 0;
     }
 
 }

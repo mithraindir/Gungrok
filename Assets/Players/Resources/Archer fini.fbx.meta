@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: 3a10e5b91815f924cb0f4fe9ff9f7407
+guid: 67869068e1ae06943a2b10ece819ba3c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Botte
-    100002: Corps
-    100004: gant.001
-    100006: Gilet
-    100008: Kappa
-    100010: //RootNode
-    400000: Botte
-    400002: Corps
-    400004: gant.001
-    400006: Gilet
-    400008: Kappa
-    400010: //RootNode
+    100000: //RootNode
+    100002: Botte
+    100004: Corps
+    100006: gant.001
+    100008: Gilet
+    100010: Kappa
+    400000: //RootNode
+    400002: Botte
+    400004: Corps
+    400006: gant.001
+    400008: Gilet
+    400010: Kappa
     2100000: Material.002
     2100002: Material.004
     2100004: Material.003
