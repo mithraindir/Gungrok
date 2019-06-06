@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
@@ -89,6 +90,7 @@ public class Health : MonoBehaviourPun
         if (life <= 0)
         {
             Debug.Log("DEATH");
+            SceneManager.LoadScene(4);
         }
 
         //cheat to regain life
