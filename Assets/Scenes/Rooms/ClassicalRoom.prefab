@@ -3323,7 +3323,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2751829563525854824}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.537, y: 0.011999999, z: 0.5970342}
+  m_LocalPosition: {x: 0.545, y: 0.011999999, z: 0.5970342}
   m_LocalScale: {x: 0.097067, y: 0.9687109, z: 0.08863438}
   m_Children: []
   m_Father: {fileID: 2920202185647018084}
@@ -11068,16 +11068,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Props_Wall_LightStick (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
-        type: 3}
-      propertyPath: m_Range
-      value: 17.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.432
@@ -11154,6 +11144,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.058
       objectReference: {fileID: 0}
+    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
+        type: 3}
+      propertyPath: m_Range
+      value: 17.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
 --- !u!4 &983340813684011717 stripped
@@ -11225,11 +11225,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9865053
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -11245,16 +11245,6 @@ PrefabInstance:
     - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_Name
       value: Props_Wall_LightStick (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
-        type: 3}
-      propertyPath: m_Range
-      value: 17.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11332,6 +11322,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.058
       objectReference: {fileID: 0}
+    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
+        type: 3}
+      propertyPath: m_Range
+      value: 17.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
 --- !u!4 &2027918403175114077 stripped
@@ -11407,11 +11407,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.25063187
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -11427,16 +11427,6 @@ PrefabInstance:
     - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_Name
       value: Props_Wall_LightStick (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
-        type: 3}
-      propertyPath: m_Range
-      value: 17.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11514,6 +11504,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.058
       objectReference: {fileID: 0}
+    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
+        type: 3}
+      propertyPath: m_Range
+      value: 17.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
 --- !u!4 &4410865736223204332 stripped
@@ -11589,11 +11589,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.63268405
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -11621,16 +11621,6 @@ PrefabInstance:
     - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_Name
       value: Props_Wall_LightStick
-      objectReference: {fileID: 0}
-    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
-        type: 3}
-      propertyPath: m_Range
-      value: 15.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11708,6 +11698,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.058
       objectReference: {fileID: 0}
+    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
+        type: 3}
+      propertyPath: m_Range
+      value: 15.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2263682135548711704, guid: 6dcdd798812b85b4796fb2548a3a311d,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
 --- !u!4 &5299625285057840298 stripped
@@ -11783,11 +11783,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.649576
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -11872,11 +11872,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.25606403
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -11949,11 +11949,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.6810243
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -12032,11 +12032,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -12109,11 +12109,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.6810251
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6473236, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
+    - target: {fileID: 2300000, guid: 4aa5a7ef56dd26f4d8cdad18e6dd51d2, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}

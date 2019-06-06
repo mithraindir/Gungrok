@@ -9,25 +9,21 @@ public class TransparentWalls : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        if (IsCharacter(collider))
-        {
+        //if (IsCharacter(collider))
+        //{
             SetMaterialTransparent();
 
             iTween.FadeTo(Wall, 0, 1);
-        }
+        //}
     }
 
-    private bool IsCharacter(Collider collider)
-    {
-        if (collider == GameObject.FindGameObjectWithTag("KnightPlayer"))
-            return true;
-        else
-        {
-            if (collider == GameObject.FindGameObjectWithTag("ArcherPlayer"))
-                return true;
-        }
-        return false;
-    }
+    //private bool IsCharacter(Collider collider)
+    //{
+     //   ICharacter character = collider.gameObject.GetComponent<ICharacter>();
+     //  ICharacter currentCharacter = CharacterManager.Instance.GetCurrentCharacter();
+
+     //   return (currentCharacter == character);
+    //}
 
     private void SetMaterialTransparent()
     {
@@ -60,11 +56,11 @@ public class TransparentWalls : MonoBehaviour
 
     private void OnTriggerExit(Collider collider)
     {
-        if (IsCharacter(collider))
-        {
+        //if (IsCharacter(collider))
+        //{
             iTween.FadeTo(Wall, 1, 1);
 
             Invoke("SetMaterialOpaque", 1.0f);
-        }
+        //}
     }
 }
