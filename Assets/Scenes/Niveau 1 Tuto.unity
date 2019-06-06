@@ -430,6 +430,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96dbb51ef19868e4caec5e820639cab3, type: 3}
+--- !u!1 &154573090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6535828719199333609, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 601704451}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &224161271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -637,6 +643,46 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6551360943288271235, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551360943288271235, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 71.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542799688004449455, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542799688004449455, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 78.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472838453532949106, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472838453532949106, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 85.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906389655610650893, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906389655610650893, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 88.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed2b86b8913a67844a0af5e3cc824d6d, type: 3}
 --- !u!1001 &226564920
@@ -738,6 +784,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1278059358}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &556027076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8960207126782250681, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2052111881}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &579997798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -811,7 +863,7 @@ PrefabInstance:
     - target: {fileID: 1726491479, guid: ed2b86b8913a67844a0af5e3cc824d6d, type: 3}
       propertyPath: Door2
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 913913627}
     - target: {fileID: 1726491478, guid: ed2b86b8913a67844a0af5e3cc824d6d, type: 3}
       propertyPath: Zombie
       value: 
@@ -990,7 +1042,7 @@ PrefabInstance:
     - target: {fileID: 1726491479, guid: ed2b86b8913a67844a0af5e3cc824d6d, type: 3}
       propertyPath: Door1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 154573090}
     - target: {fileID: 1726491478, guid: ed2b86b8913a67844a0af5e3cc824d6d, type: 3}
       propertyPath: Zombie
       value: 
@@ -1033,7 +1085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1726491476, guid: ed2b86b8913a67844a0af5e3cc824d6d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.88
+      value: 2.65
       objectReference: {fileID: 0}
     - target: {fileID: 1726491476, guid: ed2b86b8913a67844a0af5e3cc824d6d, type: 3}
       propertyPath: m_LocalScale.z
@@ -1536,6 +1588,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6345d13c32456af48af12a78f98beb35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &913913627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8960207126782250681, guid: ed2b86b8913a67844a0af5e3cc824d6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 579997798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &925340193
 GameObject:
   m_ObjectHideFlags: 0
@@ -3095,7 +3153,7 @@ PrefabInstance:
     - target: {fileID: 1726491479, guid: ed2b86b8913a67844a0af5e3cc824d6d, type: 3}
       propertyPath: Door1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 556027076}
     - target: {fileID: 1726491478, guid: ed2b86b8913a67844a0af5e3cc824d6d, type: 3}
       propertyPath: Zombie
       value: 
