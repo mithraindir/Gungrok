@@ -220,10 +220,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Model Arrow
       objectReference: {fileID: 0}
-    - target: {fileID: 400006, guid: e003dec851ac5224ca745fe2f3050ce6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.1
-      objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e003dec851ac5224ca745fe2f3050ce6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.086957
@@ -279,6 +275,10 @@ PrefabInstance:
     - target: {fileID: 400008, guid: e003dec851ac5224ca745fe2f3050ce6, type: 3}
       propertyPath: m_LocalScale.x
       value: 6.3315363
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: e003dec851ac5224ca745fe2f3050ce6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e003dec851ac5224ca745fe2f3050ce6, type: 3}
