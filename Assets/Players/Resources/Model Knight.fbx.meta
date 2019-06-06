@@ -1,55 +1,59 @@
 fileFormatVersion: 2
-guid: 0e6ffea2d79f8fd45a936e49a8cc3f41
+guid: f476eb60bbaf2bc49b52454d2082be0f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Bottes
-    100002: casque
-    100004: Epauli_res
-    100006: Gants
-    100008: //RootNode
-    100010: Lance
-    100012: Le_corps
-    100014: Torse_into_pantalon
+    100002: Camera
+    100004: casque
+    100006: "Epauli\xE8res"
+    100008: Gants
+    100010: //RootNode
+    100012: Lamp
+    100014: Lance
+    100016: Le corps
+    100018: Torse into pantalon
     400000: Bottes
-    400002: casque
-    400004: Epauli_res
-    400006: Gants
-    400008: //RootNode
-    400010: Lance
-    400012: Le_corps
-    400014: Torse_into_pantalon
+    400002: Camera
+    400004: casque
+    400006: "Epauli\xE8res"
+    400008: Gants
+    400010: //RootNode
+    400012: Lamp
+    400014: Lance
+    400016: Le corps
+    400018: Torse into pantalon
+    2000000: Camera
     2100000: Material
-    2100002: Material_005
-    2100004: Material_007
-    2100006: Material_002
-    2100008: Material_003
-    2100010: Material_001
-    2100012: Material_004
-    2100014: Material_006
+    2100002: Material.005
+    2100004: Material.007
+    2100006: Material.002
+    2100008: Material.003
+    2100010: Material.001
+    2100012: Material.004
+    2100014: Material.006
     2300000: Bottes
     2300002: casque
-    2300004: Epauli_res
+    2300004: "Epauli\xE8res"
     2300006: Gants
     2300008: Lance
-    2300010: Le_corps
-    2300012: Torse_into_pantalon
+    2300010: Le corps
+    2300012: Torse into pantalon
     3300000: Bottes
     3300002: casque
-    3300004: Epauli_res
+    3300004: "Epauli\xE8res"
     3300006: Gants
     3300008: Lance
-    3300010: Le_corps
-    3300012: Torse_into_pantalon
-    4300000: Le_corps
+    3300010: Le corps
+    3300012: Torse into pantalon
+    4300000: Le corps
     4300002: Bottes
-    4300004: Torse_into_pantalon
-    4300006: Epauli_res
+    4300004: Torse into pantalon
+    4300006: "Epauli\xE8res"
     4300008: Gants
     4300010: Lance
     4300012: casque
-    7400000: Default Take
-    9500000: //RootNode
+    10800000: Lamp
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -104,7 +108,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -131,7 +135,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
