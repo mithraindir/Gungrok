@@ -219,15 +219,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 542ffabcd9afa0e44b0850c4e7e4836b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Zombie: {fileID: 2677904035674569506, guid: 4ae899cb6c8d73a40bad0d75607c1e11, type: 3}
-  ZombiePrefab: {fileID: 262345729595618303, guid: 4ae899cb6c8d73a40bad0d75607c1e11,
-    type: 3}
+  Zombie: {fileID: 248, guid: 4ae899cb6c8d73a40bad0d75607c1e11, type: 3}
+  ZombiePrefab: {fileID: 652, guid: 4ae899cb6c8d73a40bad0d75607c1e11, type: 3}
   Ghoul: {fileID: 6196386628642305656, guid: 21343a408c48f0b49ac581eb6406bd41, type: 3}
   GhoulPrefab: {fileID: 2886700584857635748, guid: 21343a408c48f0b49ac581eb6406bd41,
     type: 3}
-  Wizzard: {fileID: 5380596921883391199, guid: 011db1be69d01b74d9ff28c949b86730, type: 3}
-  WizzardPrefab: {fileID: 7897022834449991905, guid: 011db1be69d01b74d9ff28c949b86730,
-    type: 3}
+  Wizzard: {fileID: 250, guid: 011db1be69d01b74d9ff28c949b86730, type: 3}
+  WizzardPrefab: {fileID: 677, guid: 011db1be69d01b74d9ff28c949b86730, type: 3}
 --- !u!1 &46436833457695093
 GameObject:
   m_ObjectHideFlags: 0
@@ -11378,6 +11376,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
+    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
+      propertyPath: m_Name
+      value: Props_Wall_LightStick (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.432
@@ -11434,10 +11436,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.21018496
       objectReference: {fileID: 0}
-    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
-      propertyPath: m_Name
-      value: Props_Wall_LightStick (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 2226318501654291378, guid: 6dcdd798812b85b4796fb2548a3a311d,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -11483,6 +11481,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
+    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
+      propertyPath: m_Name
+      value: Props_Wall_LightStick (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.4697
@@ -11539,10 +11541,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.21018496
       objectReference: {fileID: 0}
-    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
-      propertyPath: m_Name
-      value: Props_Wall_LightStick (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 2226318501654291378, guid: 6dcdd798812b85b4796fb2548a3a311d,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -11588,6 +11586,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
+    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
+      propertyPath: m_Name
+      value: Props_Wall_LightStick (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.401
@@ -11643,10 +11645,6 @@ PrefabInstance:
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.21018496
-      objectReference: {fileID: 0}
-    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
-      propertyPath: m_Name
-      value: Props_Wall_LightStick (2)
       objectReference: {fileID: 0}
     - target: {fileID: 2226318501654291378, guid: 6dcdd798812b85b4796fb2548a3a311d,
         type: 3}
@@ -11770,6 +11768,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 857533253}
     m_Modifications:
+    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
+      propertyPath: m_Name
+      value: Props_Wall_LightStick
+      objectReference: {fileID: 0}
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.0891
@@ -11825,10 +11827,6 @@ PrefabInstance:
     - target: {fileID: 4303056760651506, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.21018472
-      objectReference: {fileID: 0}
-    - target: {fileID: 1409237074301192, guid: 6dcdd798812b85b4796fb2548a3a311d, type: 3}
-      propertyPath: m_Name
-      value: Props_Wall_LightStick
       objectReference: {fileID: 0}
     - target: {fileID: 2226318501654291378, guid: 6dcdd798812b85b4796fb2548a3a311d,
         type: 3}
