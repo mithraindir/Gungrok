@@ -22,9 +22,9 @@ public class MonsterList : MonoBehaviourPun
         if (Monsterlist.Contains(Monster))
         {
             Monsterlist.Remove(Monster);
-
+            nb -= 1;
         }
-        nb -= 1;
+        
     }
 
     public static bool IsEmpty()
