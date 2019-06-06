@@ -4,26 +4,21 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Bottes
-    100002: Camera
-    100004: casque
-    100006: "Epauli\xE8res"
-    100008: Gants
-    100010: //RootNode
-    100012: Lamp
-    100014: Lance
-    100016: Le corps
-    100018: Torse into pantalon
+    100002: casque
+    100004: "Epauli\xE8res"
+    100006: Gants
+    100008: Lance
+    100010: Le corps
+    100012: //RootNode
+    100014: Torse into pantalon
     400000: Bottes
-    400002: Camera
-    400004: casque
-    400006: "Epauli\xE8res"
-    400008: Gants
-    400010: //RootNode
-    400012: Lamp
-    400014: Lance
-    400016: Le corps
-    400018: Torse into pantalon
-    2000000: Camera
+    400002: casque
+    400004: "Epauli\xE8res"
+    400006: Gants
+    400008: Lance
+    400010: Le corps
+    400012: //RootNode
+    400014: Torse into pantalon
     2100000: Material
     2100002: Material.005
     2100004: Material.007
@@ -53,7 +48,6 @@ ModelImporter:
     4300008: Gants
     4300010: Lance
     4300012: casque
-    10800000: Lamp
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:

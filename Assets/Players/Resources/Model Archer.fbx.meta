@@ -3,44 +3,38 @@ guid: 3a10e5b91815f924cb0f4fe9ff9f7407
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: "Barbie tire des fl\xE8ches qui sortent de nulle part.001"
-    100004: Botte
-    100006: Camera
-    100008: gant.001
-    100010: Gilet
-    100012: Kappa
-    100014: Lamp
-    400000: //RootNode
-    400002: "Barbie tire des fl\xE8ches qui sortent de nulle part.001"
-    400004: Botte
-    400006: Camera
-    400008: gant.001
-    400010: Gilet
-    400012: Kappa
-    400014: Lamp
-    2000000: Camera
+    100000: Botte
+    100002: Corps
+    100004: gant.001
+    100006: Gilet
+    100008: Kappa
+    100010: //RootNode
+    400000: Botte
+    400002: Corps
+    400004: gant.001
+    400006: Gilet
+    400008: Kappa
+    400010: //RootNode
     2100000: Material.002
     2100002: Material.004
     2100004: Material.003
     2100006: Material.001
     2100008: Material
-    2300000: "Barbie tire des fl\xE8ches qui sortent de nulle part.001"
-    2300002: Botte
+    2300000: Botte
+    2300002: Corps
     2300004: gant.001
     2300006: Gilet
     2300008: Kappa
-    3300000: "Barbie tire des fl\xE8ches qui sortent de nulle part.001"
-    3300002: Botte
+    3300000: Botte
+    3300002: Corps
     3300004: gant.001
     3300006: Gilet
     3300008: Kappa
-    4300000: "Barbie tire des fl\xE8ches qui sortent de nulle part.001"
+    4300000: Corps
     4300002: Kappa
     4300004: gant.001
     4300006: Gilet
     4300008: Botte
-    10800000: Lamp
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
