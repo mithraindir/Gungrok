@@ -22,12 +22,9 @@ public class OpenMenu : MonoBehaviour
             ESCMenu.SetActive(false);
             opened = false;
         }
-    }
-
-    public void CloseMenu()
-    {
-        Debug.Log("Menu Close");
-        ESCMenu.SetActive(false);
-        opened = false;
+        else if (Input.GetKey(KeyCode.Return) && opened == true)
+        {
+            Application.Quit();
+        }
     }
 }
