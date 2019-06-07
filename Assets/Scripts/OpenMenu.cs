@@ -7,6 +7,10 @@ public class OpenMenu : MonoBehaviour
     public GameObject ESCMenu;
     public bool opened;
 
+    void Start()
+    {
+        opened = false;  
+    }
     void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && opened == false)
@@ -14,7 +18,6 @@ public class OpenMenu : MonoBehaviour
             Debug.Log("Menu Open");
             opened = true;
             ESCMenu.SetActive(true);
-
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && opened == true)
         {
@@ -22,9 +25,18 @@ public class OpenMenu : MonoBehaviour
             ESCMenu.SetActive(false);
             opened = false;
         }
-        else if (Input.GetKey(KeyCode.Return) && opened == true)
+        else if (Input.GetKeyDown(KeyCode.O) && opened == true)
         {
-            Application.Quit();
+            Quit();
         }
+    }
+
+    public void Quit()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit ();
+#endif
     }
 }
